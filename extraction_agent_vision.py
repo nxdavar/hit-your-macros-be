@@ -100,7 +100,8 @@ def main():
 
     s3 = boto3.client("s3")
     bucket_name = "nutrition-menus"
-    folder_name = "torchys/"
+    folder_base = "popeyes"
+    folder_name = folder_base + "/"
 
     presigned_urls_cache = {}
     presigned_urls_dict = generate_presigned_urls(
@@ -110,14 +111,16 @@ def main():
     print("presigned urls dict: ", presigned_urls_dict)
     print("presigned urls dict keys: ", presigned_urls_dict.keys())
 
-    header_presigned_url = presigned_urls_dict["torchys/torchys_header.png"]
+    header_presigned_url = presigned_urls_dict[
+        f"""{folder_base}/{folder_base}_header.png"""
+    ]
     header_image_data = base64.b64encode(
         httpx.get(header_presigned_url).content
     ).decode("utf-8")
 
     for file_key, menu_presigned_url in presigned_urls_dict.items():
 
-        if file_key == "torchys/" or file_key.find("header") != -1:
+        if file_key == folder_name or file_key.find("header") != -1:
             continue
 
         model = ChatOpenAI(model="gpt-4o-mini")
@@ -153,7 +156,7 @@ def main():
         filtered_res = res_tmp[res_tmp_start_idx + 6 : res_tmp_end_idx]
         print("this is filtered res: ", filtered_res)
 
-        save_to_csv(filtered_res, f"""res_csvs/omni_test.csv""")
+        save_to_csv(filtered_res, f"""res_csvs/{folder_base}.csv""")
 
 
 if __name__ == "__main__":
