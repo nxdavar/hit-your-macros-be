@@ -100,7 +100,7 @@ def main():
 
     s3 = boto3.client("s3")
     bucket_name = "nutrition-menus"
-    folder_base = "whataburger"
+    folder_base = "halal_guys"
     folder_name = folder_base + "/"
 
     presigned_urls_cache = {}

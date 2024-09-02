@@ -1,0 +1,71 @@
+Response
+"
+Menu Item, Serving Size (oz), Total Calories (kcal), Calories from Fat (kcal), Total Fat (g), Saturated Fat (g), Trans Fat (g), Cholesterol (mg), Sodium (mg), Total Carbohydrates (g), Dietary Fiber (g), Total Sugar (g), Protein (g)
+Barq's Root Beer, 20, 567, 270, 0, 0, 0, 0, 90, 73, 0, 73, 0
+Coca-Cola, 20, 567, 240, 0, 0, 0, 0, 65, 67, 0, 67, 0
+Diet Coke, 20, 567, 0, 0, 0, 0, 0, 85, 1, 0, 0, 0
+Cherry Coca-Cola, 20, 567, 260, 0, 0, 0, 0, 70, 70, 0, 70, 0
+Coca-Cola Zero Sugar, 20, 567, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0
+Dr Pepper, 20, 567, 240, 0, 0, 0, 0, 75, 65, 0, 64, 0
+Fanta Orange, 20, 567, 250, 0, 0, 0, 0, 65, 67, 0, 66, 0
+Fuze Sweet Tea, 20, 567, 140, 0, 0, 0, 0, 85, 37, 0, 37, 0
+Fuze Unsweet Tea, 20, 567, 0, 0, 0, 0, 0, 85, 0, 0, 0, 0
+Fuze Raspberry Tea, 20, 567, 140, 0, 0, 0, 0, 85, 38, 0, 37, 0
+Glaceau Vitaminwater xxx, 20, 567, 120, 0, 0, 0, 0, 65, 32, 0, 31, 0
+Gold Peak Sweetened Black Tea, 20, 567, 190, 0, 0, 0, 0, 80, 52, 0, 52, 0
+"
+"
+""Menu Item"",""Serving Size (oz)"",""Total Calories (kcal)"",""Calories From Fat (kcal)"",""Total Fat (g)"",""Saturated Fat (g)"",""Trans Fat (g)"",""Cholesterol (mg)"",""Sodium (mg)"",""Total Carbohydrates (g)"",""Dietary Fiber (g)"",""Total Sugar (g)"",""Protein (g)""
+""Hi-C Poppin' Pink Lemonade"",20,220,0,0,0,0,0,160,61,0,59,0
+""Hi-C Flashin' Fruit Punch"",20,260,0,0,0,0,0,120,71,0,69,0
+""Luzianne"",20,0,0,0,0,0,0,0,0,0,0,0
+""Mello Yello"",20,260,0,0,0,0,0,85,73,0,73,0
+""Minute Maid Lemonade POM (93% Juice)"",20,240,0,0,0,0,0,115,67,0,63,0
+""Minute Maid Light Lemonade"",20,0,0,0,0,0,0,70,3,0,0,0
+""Pepsi Xtra"",20,230,0,0,0,0,0,90,63,0,63,0
+""POWERade Mountain Berry Blast"",20,140,0,0,0,0,0,190,37,0,36,0
+""Rituals"",20,0,0,0,0,0,0,0,0,0,0,0
+""Seagram's Ginger Ale"",20,230,0,0,0,0,0,75,59,0,58,0
+""Sprite"",20,230,0,0,0,0,0,115,61,0,61,0
+"
+"
+Menu Item,Serving Size (oz),Total Calories (kcal),Calories from Fat (kcal),Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Total Carbohydrates (g),Dietary Fiber (g),Total Sugar (g),Protein (g)
+Regular Chicken Platter,18,521,648,93,10,3,0,245,1296,79,2,4
+Small Chicken Platter,13,356,471,65,7,2,0,163,926,61,1,2
+Regular Beef Gyro Platter,18,521,933,320,36,16,1,107,2700,113,2,4
+Small Beef Gyro Platter,13,356,665,217,24,11,1,71,1862,83,1,2
+Regular Combo Platter,18,521,794,206,23,10,1,176,1998,96,2,4
+Small Combo Platter,13,357,572,142,16,0,0,117,1401,73,1,3
+Regular Falafel Platter,19,536,1049,375,42,7,0,1968,139,22,6,29
+Small Falafel Platter,18,499,914,306,34,6,0,1686,126,18,6,6
+Regular Chicken/Falafel Platter,19,536,884,265,30,5,0,122,1716,109,14,5
+Small Chicken/Falafel Platter,14,386,648,182,20,4,0,82,1239,85,10,4
+Regular Beef Gyro/Falafel Platter,19,536,1030,378,42,12,1,53,2418,126,14,5
+Small Beef Gyro/Falafel Platter,14,386,745,258,29,8,0,36,1707,96,10,4
+Chicken Sandwich,10,278,419,66,7,2,0,163,947,47,2,4
+Beef Gyro Sandwich,10,278,613,218,24,11,1,71,1840,62,2,29
+Combo Sandwich,10,278,516,142,16,7,0,117,1372,58,2,4
+Falafel Sandwich,10,276,641,232,26,4,0,1259,82,14,5
+Chicken/Falafel Sandwich,10,295,597,183,20,4,0,82,1222,11,5,32
+Beef Gyro/Falafel Sandwich,10,295,694,259,29,8,0,36,1690,82,10,5
+"
+"
+Menu Item,Serving Size (oz),Total Calories (kcal),Calories from Fat (kcal),Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Total Carbohydrates (g),Dietary Fiber (g),Total Sugar (g),Protein (g)
+Hummus,6,170,377,212,24,4,0,756,29,13,0,12
+Baba Ghanoush,6,170,187,14,2,0,0,678,11,4,0,4
+Tabbouleh,6,170,68,1,0,0,0,346,15,4,1,3
+Tahini,6,170,481,54,6,2,0,684,91,16,0,16
+Falafel (per 2 pieces),3,74,269,138,15,1,0,564,25,2,1,9
+French Fries,10,283,839,320,35,6,0,1170,121,12,0,9
+Pita (Whole Loaf),3,79,225,25,3,1,0,403,42,2,3,3
+Baklava,2,51,230,92,10,3,0,89,32,4,17,3
+Green Peppers,1,28,5,0,0,0,0,0,3,0,0,1
+Onions,1,28,5,0,0,0,0,5,2,1,0,1
+Olives,1,28,49,38,4,1,0,547,2,2,0,0
+Jalapeños,1,28,5,0,0,0,0,247,1,0,0,1
+Tahini,1,28,92,68,8,1,0,46,3,3,0,3
+White Sauce,3,83,450,381,42,6,54,540,17,7,1,0
+White Sauce,2,57,300,254,28,4,36,360,11,7,1,0
+Hot Sauce,0.25,7,7,2,0,0,89,1,1,0,0
+BBQ Sauce,0.2,6,11,0,0,0,56,3,0,2,0
+"
