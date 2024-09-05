@@ -1,0 +1,90 @@
+import pandas as pd
+import numpy as np
+import csv
+from utils.file_util import get_filenames_in_folder
+from utils.file_names import IMAGE_TO_RES_CSVS, CLEANED_RES_CSVS, OG_RES_ASSETS
+
+
+def convert_range_to_average(value):
+    if "-" in value:
+        low, high = map(float, value.split("-"))
+        return (low + high) / 2
+    return float(value)
+
+
+def extract_value(value):
+    value = str(
+        value
+    ).strip()  # Ensure the value is a string and strip any extra spaces
+    if "<" in value or ">" in value:
+        return float(value[1:])  # Return the number part of the string
+    return float(value)  # Return the value as a float if no inequality is present
+
+
+import csv
+
+
+# Checks the consistency of the rows in a CSV file
+def check_csv_consistency(file_path):
+    consistent_rows = []
+    inconsistent_rows = []
+
+    with open(file_path, mode="r", newline="") as csvfile:
+        reader = csv.reader(csvfile)
+        header = next(reader)
+        num_columns = len(header)
+
+        for row in reader:
+            if len(row) == num_columns and all(
+                row
+            ):  # Check if the row has the correct number of columns and no empty values
+                consistent_rows.append(row)
+            else:
+                inconsistent_rows.append(row)
+
+    if inconsistent_rows:
+        print("Inconsistent rows found:")
+        for row in inconsistent_rows:
+            print(row)
+    else:
+        print("All rows are consistent with the header.")
+
+
+def main():
+    file_names = get_filenames_in_folder(IMAGE_TO_RES_CSVS)
+
+    numerical_ = [
+        "cal",
+        "calories",
+        "fat",
+        "saturated",
+        "trans fat",
+        "cholesterol",
+        "sodium",
+        "carb",
+        "fiber",
+        "sugar",
+        "protein, iron",
+        "calcium",
+        "vitamin a",
+        "vitamin c",
+        "vitamin d",
+        "vitamin e",
+        "vitamin k",
+        "thiamin",
+        "fiber",
+    ]
+
+    for file_name in file_names:
+        check_csv_consistency(file_name)
+        df = pd.read_csv(IMAGE_TO_RES_CSVS / file_name)
+        # iterate through all numerical columns
+        for col in df.columns:
+            if any([word in col.lower() for word in numerical_]):
+                df[col] = df[col].apply(extract_value)
+                df[col] = df[col].apply(convert_range_to_average)
+        df.to_csv(CLEANED_RES_CSVS / file_name, index=False)
+
+
+if __name__ == "__main__":
+    main()

@@ -6,9 +6,6 @@ THE 3 FINGER COMBO®,1 Combo,1020,56,9,0.5,125,1640,81,10,9,47
 THE BOX COMBO®,1 Combo,1250,68,11,0.5,170,2130,97,12,16,61
 The CANIAC Combo,1 Combo,1790,104,16,1,255,3160,124,15,21,89
 The Sandwich Combo,1 Combo,1080,54,8,0.5,120,1700,103,10,13,52
-"
-"
-Item,Serving Size,Total Calories,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carb (g),Dietary Fiber (g),Sugar (g),Protein (g)
 Honey Mustard,1.7 oz (48 g),140,8,2,0,10,240,16,<1g,13,1
 Ketchup,1 Dip N Squeeze Cup,27 g,35,0,0,0,250,8,0,6,0
 Louisiana Hot Sauce,1 packet,7 g,0,0,0,0,270,0,0,0,0
@@ -20,9 +17,6 @@ Sweet'N Low,1 Packet,1 g,0,0,0,0,0,0,0,0,0
 Iodized Salt,1 Packet,0.6 g,0,0,0,0,240,0,0,0,0
 Black Pepper,1 Packet,0.05 g,0,0,0,0,0,0,0,0,0
 Lemon Wedge,1/6 Wedge,0 g,0,0,0,0,0,0,0,0,0
-"
-"
-Item,Serving Size,Total Calories,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carb (g),Dietary Fiber (g),Sugar (g),Protein (g)
 Sweet Tea - Kid's,12 fl oz,130,0,0,0,0,15,33,0,33,0
 Sweet Tea - Reg,22 fl oz,240,0,0,0,0,25,61,0,61,0
 Sweet Tea - Lrg,32 fl oz,340,0,0,0,0,35,88,0,88,0
@@ -49,9 +43,6 @@ BARQ'S® Root Beer - Reg,22 fl oz,320,0,0,0,0,0,95,80,80,0
 BARQ'S® Root Beer - Lrg,32 fl oz,460,0,0,0,0,0,140,116,116,0
 COCA-COLA CHERRY® - Kid's,12 fl oz,170,0,0,0,0,0,40,42,42,0
 COCA-COLA CHERRY® - Reg,22 fl oz,310,0,0,0,0,0,75,77,77,0
-"
-"
-Item,Serving Size,Total Calories,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carb (g),Dietary Fiber (g),Sugar (g),Protein (g)
 COCA-COLA CHERRY® - Lrg,32 fl oz,450,0,0,0,110,112,0,0,0
 COCA-COLA CLASSIC® - Kid's,12 fl oz,160,0,0,0,40,40,0,0,0
 COCA-COLA CLASSIC® - Reg,22 fl oz,290,0,0,0,70,73,0,0,0
@@ -77,13 +68,9 @@ SPRITE® - Reg,12 fl oz,170,0,0,0,70,37,0,0,0
 SPRITE® - Lrg,32 fl oz,0,0,0,0,180,98,0,0,0
 Apple Juice Drink Pouch,6 fl oz,35,0,0,0,15,9,0,0,0
 Milk 1% Box,8 fl oz,110,2.5,1.5,0,10,130,13,0,0
-"
-"
-Item,Serving Size,Total Calories,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carb (g),Dietary Fiber (g),Sugar (g),Protein (g)
 Chicken Finger,1.9 oz (55 g),130,6,1,0,40,190,5,1,0,13
 Crinkle-Cut Fries,5.1 oz (144 g),390,19,2,0,0,310,49,7,1,5
 Texas Toast (1 Slice),1.6 oz (45 g),140,4,1,0,0,260,23,1,4,4
 Coleslaw,3.1 oz (89 g),100,6,1,0,5,310,11,1,7,1
 Cane’s Sauce®,1.5 oz (43 g),190,19,3,0,10,580,6,0,4,0
 Sandwich,10.5 oz (297 g),780,39,6,0,120,1470,66,5,13,48
-"
