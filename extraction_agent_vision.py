@@ -1,17 +1,10 @@
-from langchain.prompts import ChatPromptTemplate, PromptTemplate
-from langchain_core.runnables import RunnableLambda, RunnablePassthrough
-from langchain.chains import LLMChain
-from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+# external imports:
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
-import PyPDF2
-from openai import OpenAI
-import camelot
 import csv
 import os
 import boto3
-from botocore.exceptions import NoCredentialsError, PartialCredentialsError
 import base64
 import httpx
 from dotenv import load_dotenv
@@ -95,12 +88,9 @@ def generate_presigned_urls(
 def main():
     load_dotenv()
 
-    prompt_template_str = """
-        You are going to be given urls to two images. One image will be part of a nutritional information table for a restaurant. The second image will be the header of the nutritional information table. You will need to extract the nutritional information from the table and output the data as a csv file. This is the first image {nutritional_information}. This is the second image {header}."""
-
     s3 = boto3.client("s3")
     bucket_name = "nutrition-menus"
-    folder_base = "panda_express"
+    folder_base = "tatte"
     folder_name = folder_base + "/"
 
     presigned_urls_cache = {}
@@ -135,8 +125,8 @@ def main():
                     "text": " You are going to be given urls to two images. One image will be part of a nutritional information table for a restaurant. "
                     + " The second image will be the header of the nutritional information table. You will need to extract the nutritional information "
                     + "from the table and output the data as a csv file. For the menu item name, ensure it is the first column of the csv file."
-                    + "Also if the menu item name contains a comma, please replace it with a hyphen. Likewise, strip any of the following characters"
-                    + " from the menu item name: ['†', '*, '®']",
+                    + "Also if the menu item name contains a comma, please replace it with a hypen with a whitespace before and after the hyphen."
+                    + " Likewise, strip any of the following characters from the menu item name: ['†', '*, '®', '™']",
                 },
                 {
                     "type": "image_url",

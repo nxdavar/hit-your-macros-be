@@ -1,0 +1,471 @@
+Response
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+""Bread- Baguette Retail (8 slices)"",110,0,0,0,0,260,21,0,0,4
+""Bread- Challah Braid Lg (12 slices)"",420,10.5,1,0,36,730,73,3,8,10
+""Bread- Ciabatta Loaf (6 slices)"",230,4,0.5,0,0,480,38,2,0,7
+""Bread- Ciabatta Retail (6 slices)"",120,2,0.5,0,0,240,19,""less than 1 gram"",0,4
+""Bread- Country Sourdough Retail (12 slices)"",140,0,0,0,0,290,27,1,0,5
+""Bread- Focaccia (6 slices)"",140,5.5,1,0,3.5,280,17,""less than 1 gram"",0,4
+""Bread- Multigrain Retail (12 slices)"",140,2,0,0,0,270,25,2,2,5
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Biscuit - Buttermilk,480,31,19,1,100.5,910,45,2,4,7
+Boureka - Cheese,460,35,23,0,119,530,29,7,8
+Chocolate Rose,510,20.5,6.5,0.5,54.5,560,74,2,19,10
+Chocolate Snail,390,25.5,16.5,0,75,250,36,13,5
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Cinnamon-Pecan Rose,660,39,15.5,1,97.5,540,75,4,20,10
+Croissant - Almond,580,36,20.5,0.5,126.5,390,54,3,24,7
+Croissant - Chocolate,480,29,19,0,72,320,44,1,16,7
+Croissant - Ham & Cheese,470,30,18.5,0,108,950,33,1,7,15
+Croissant - Pistachio,580,37.5,20,0.5,115.5,370,51,3,20,10
+Croissant - Plain,350,22,15,0,68.5,300,30,1,4,5
+GF Tea Cake - Pumpkin Seed Praline,270,15.5,6,0.5,76.5,125,26,2,20,5
+GF Tea Cake - Raspberry,200,11.5,4,0,69,115,21,2,16,3
+GF Tea Cake - Strawberry,270,15,5.5,0.5,88,150,29,2,22,3
+Jerusalem Bagel,430,17.5,1,0,0,2170,62,2,10,13
+Kouign-Amann,410,27.5,18,0.5,74,500,38,1,11,4
+Monkey Bread,480,30,20,0,87.5,370,46,2,16,4
+Morning Bun,460,32.5,21,0.5,87,300,42,2,15,4
+Muffin - Cranberry Orange Ginger,400,13.5,3.5,0,61,240,67,2,37,6
+Muffin - Dark Chocolate,470,28.5,15,0.5,126,280,39,2,30,7
+Palmier,420,27.5,18.5,0,85,350,42,2,18,4
+Pita - Feta & Pistachio,420,18,5.5,0,15,1040,51,3,8,15
+Pita - Goat Cheese, Leek & Kale,410,15.5,4,0,6.5,930,56,4,9,11
+Pita - Prosciutto & Pear,330,8.5,2.5,0,15.5,660,52,3,11,12
+Pita - Spinach & Labneh,330,12,4.5,0,16.5,2000,47,2,7,7
+Scone - Cherry Almond,500,17.5,9,0.5,38,710,80,4,18,11
+Scone - Savory,620,40,25.5,1.5,113,840,58,3,9,13
+Turnover - Apple,460,30,20,0,103.5,420,43,2,18,4
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Add Decaf Espresso Shot,0,0,0,0,0,0,0,0,0,0
+Add Espresso Shot,0,0,0,0,0,0,0,0,0,0
+Add Syrup - Caramel,50,0,0,0,0,12,12,0,0,0
+Add Syrup - Hazelnut,50,0,0,0,0,12,12,0,0,0
+Add Syrup - Vanilla,50,0,0,0,0,12,12,0,0,0
+Add Splash of Half & Half (2 oz),80,7,4,20,20,2,2,0,0,0
+Add Splash of Almond Milk (2 oz),10,0.5,0,0,0,45,0,0,0,0
+Add Splash of Oat Milk (2 oz),30,1.5,0,0,25,4,2,0,0,0
+Add Splash of Soy Milk (2 oz),30,1,0,0,25,3,2,0,0,0
+Add Splash of Whole Milk (2 oz),40,2,1.5,0,10,30,3,0,3,2
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Biscuit Egg Sandwich,840,63.5,36.5,2,588,1160,51,3,6,20
+Bread And Butter,710,19,8.5,0,44.5,1080,115,7,27,16
+Breakfast Sandwich,870,45,18.5,0,511,1590,67,3,0,31
+Croissant Breakfast Sandwich,680,48.5,25.5,0,323.5,720,38,6,6,13
+Croque Madame,790,53.5,27.5,0,370,2560,41,2,11,35
+Croque Monsieur,660,42,25,0,155,1580,40,1,11,29
+Halloumi -&- Sunnyside Breakfast Sandwich,520,22.5,7.5,0.5,259.5,1000,61,3,8,21
+Jerusalem Bagel Egg In The Hole,680,36.5,5.5,0,430,3590,68,3,12,26
+Jerusalem Bagel Egg In The Hole With Ham -&- Cheese,860,47.5,10.5,0,491,4700,73,3,17,43
+Lamb Hash,930,61.5,20.5,0,332.5,1930,63,7,13,32
+Muesli Bowl,980,65,31,10,125,340,86,10,45,18
+Muesli Cup,670,37.5,16.5,1,100,150,47,5,24,31
+Prosciutto Scrambled Egg Plate,640,41.5,21.5,1,525.5,620,34,1,0,31
+Roasted Pear, Labneh, -&- Granola,720,39,20,0,83.5,220,81,6,54,10
+Smoked Salmon -&- Egg Sandwich,630,47,14.5,0.5,298,1850,32,8,4,25
+Spinach, Jerusalem Artichoke -&- Egg Plate - Cilbir,760,49,18,0,272.5,1220,63,4,14,19
+Toast,330,0.5,0,0,0,690,65,3,0,11
+Tomato -&- Goat Cheese Scrambled Egg Plate,690,48,24.5,1,522,660,38,2,4,25
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+GF Breakfast Sandwich,590,40,11.5,0,485,2110,27,1,2,32
+GF Croissant Breakfast Sandwich,340,20.5,4.5,0,223.5,480,32,5,4,12
+GF Halloumi -&- Sunnyside Breakfast Sandwich,310,16.5,6,0,233,690,27,2,3,15
+GF Lamb Hash,840,61,20,0,318,1770,46,6,11,29
+GF Meze Breakfast,860,70,30.5,1,547,1460,38,5,9,26
+GF Prosciutto Scrambled Egg Plate,610,46.5,22,1,529,540,26,0,2,27
+GF Smoked Salmon -&- Egg Sandwich,650,49,14,0.5,289,1920,36,8,4,24
+GF Spinach, Jerusalem Artichoke -&- Egg Plate - Cilbir,650,50,17.5,0,272.5,1010,43,3,15,14
+GF Tomato -&- Goat Cheese Scrambled Egg Plate,860,55.5,25,1,522,940,63,3,6,27
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Brownies- Halva,700,41.5,22,0.5,129.5,170,54,1,28,10
+Brownies- Plain,590,34.5,20.5,0.5,129.5,160,45,0,23,7
+Brownies- Walnut,690,45.5,21.5,0.5,129.5,160,47,1,24,10
+Chocolate- Dark, Almonds Retail,170,12,4,0,0,12,1,9,4
+Cookie- Almond Square- Bag,130,8.5,3,0,12,40,12,1,5,2
+Cookie- Chocolate Sandwich- Ind,420,22.5,13.5,0.5,46.5,340,40,1,10,2
+Cookie- Cranberry Pistachio- Bag,140,6.5,3,0,14.5,30,19,1,10,2
+Cookie- Cranberry Pistachio- Box,140,6.5,3,0,14.5,30,19,1,10,2
+Cookie- Crunchy Almond- Ind,50,3.5,0.5,0,less than 1 gram,0,3,0,3,2
+Cookie- Gingerbread Tile,110,3.5,2,0,11.5,90,19,0,10,1
+Cookie- Halva Chocolate Chunk,390,23,13.5,0.5,less than 1 gram,63,280,45,1,26,5
+Cookie- Linzer Lg- Ind,250,13,8.5,0.5,44,140,32,1,14,3
+Cookie- Nutella- Box,170,10,5.5,0.5,24.5,80,19,0,8,2
+Cookie- Nutella- Ind,80,5,2.5,0,12.5,40,9,0,4,1
+Cookie- Nutella- Tube,170,10,5.5,0.5,24.5,80,19,0,8,2
+Cookie- Plain Butter- Box,120,7.5,4.5,0.5,24.5,75,14,4,2
+Cookie- Plain Butter- Ind,30,2,1,0,6,20,4,1,0,1
+Cookie- Plain Butter- Tube,120,7.5,4.5,0.5,24.5,75,14,4,2
+Cookie- Vanilla Shortbread- Bag,240,15,9.5,0.5,40,150,28,0,19,1
+GF Cookie- Oatmeal Raisin,500,23.5,11,0.5,74.5,320,69,4,36,7
+Nuts- Maple Pecans,180,16,1.5,0,55,10,2,7,1
+"
+"
+Name,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+French Toast,1330,73,34.5,1,302,1190,147,7,73,30
+Greek Style Pancakes,1070,50,22,0,363.5,1190,138,4,63,23
+Meze Breakfast,1190,83.5,31.5,1,547,3430,81,6,17,37
+Savory French Toast,1200,77.5,29,1,691.5,2120,95,5,17,41
+Strawberry Donut,490,24,13,1,123,300,59,3,23,9
+Vanilla Sugar Donut,450,24,13,1,123,290,48,2,13,9
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Cheesecake Cup - Blue Fruit,340,26.5,16.5,0.5,82,135,23,1,15,4
+Cheesecake Cup - Crumbs,360,28.5,18,1,88.5,170,24,0,14,4
+Cheesecake Cup - Red Fruit,350,26.5,16.5,0.5,82,135,25,3,15,4
+Dark Chocolate Mousse - Ind,500,39.5,24,1,142.5,45,29,0,26,7
+Espresso Mocha Mousse - Ind,740,59,35,1,197.5,65,41,3,24,12
+Halva Bomb - Ind,720,47,23,0.5,130,160,51,3,24,12
+Krembo, Passion Fruit,280,18,11,0.5,54,115,29,0,23,2
+Meringue, Chocolate Coconut - Ind,160,2,1.5,0,0,35,33,0,32,2
+Pavlova, Mint Lemon Blueberry - Ind,220,16,10,0.5,54,15,19,14,2
+Cake - Coffee - Slice,660,36,16,0.5,115.5,490,76,3,42,10
+Pie - Apple - Slice,530,17.5,11,0.5,46.5,360,92,4,61,3
+Pie - Salted Honey Hazelnut Pecan - Slice,680,45.5,18,1,120.5,380,67,4,42,8
+Pie - Pumpkin with Candied Walnuts - Slice,370,18.5,9,0.5,106,270,47,2,26,7
+Pound Cake - Gingerbread - Slice,610,24,14.5,1,167.5,280,96,2,66,8
+Pound Cake - Pumpkin - Slice,650,28,15,1,165,250,91,3,61,12
+Tart - Fruit Box - Mixed,530,36.5,22.5,1,99,105,47,2,13,2
+Tart - Lemon Mint - Ind,280,21,13,0,84.5,25,22,0,22,2
+Tart - Mixed Nut - Ind,770,58.5,18,1,75.5,160,56,6,27,13
+Tart - Pear - Ind,350,22,9,0.5,67.5,135,36,3,31,3
+Tart - Pistachio Cherry - Ind,690,42.5,21,1.5,119,260,71,4,31,10
+Tiramisu - Ind,340,13.5,8.5,0,85.5,70,33,0,22,8
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+12 Oz Americano,0,0,0,0,0,0,0,0,0,0
+12 Oz Black Sesame Latte,400,23,8,0,37.5,220,37,1,32,13
+12 Oz Cafe Au Lait,80,4,2.5,0,15,70,6,0,6,4
+12 Oz Chai Latte,150,5,3,0,19,80,21,0,20,5
+12 Oz Coffee,0,0,0,0,0,0,0,0,0,0
+12 Oz Cold Brew,0,0,0,0,0,0,0,0,0,0
+12 Oz Cold Brew - Keg,0,0,0,0,0,0,0,0,0,0
+12 Oz Cold Milk,0,0,0,0,0,0,0,0,0,0
+12 Oz Decaf Americano,230,12,7.5,0,45,180,18,0,17,12
+12 Oz Decaf Black Sesame Latte,400,23,8,0,37.5,220,37,1,32,13
+12 Oz Decaf Honey Halva Latte,270,13,7,0,37.5,170,27,1,23,11
+12 Oz Decaf Latte,190,10,6.5,0,37.5,150,15,0,14,10
+12 Oz Decaf Mocha,360,21.5,13,0,37.5,150,29,0,25,12
+12 Oz Decaf Pistachio Latte,390,19,7.5,0,37.5,250,43,2,38,14
+12 Oz Honey Halva Latte,270,13,7,0,37.5,170,27,1,23,11
+12 Oz Hot Chocolate,470,29,18,0,37.5,150,38,0,33,14
+12 Oz Iced Black Tea - Cup,0,0,0,0,0,0,0,0,0,0
+12 Oz Iced Blood Orange Hibiscus Tea - Cup,0,0,0,0,0,0,0,0,0,0
+12 Oz Iced Green Tea - Cup,0,0,0,0,0,0,0,0,0,0
+12 Oz Latte,0,0,0,0,0,0,0,0,0,0
+12 Oz London Fog,120,4,2.5,0,15,60,18,0,17,4
+12 Oz Matcha Latte,190,10,6.5,0,37.5,150,15,0,14,10
+12 Oz Mocha,360,21.5,13,0,37.5,150,29,0,25,12
+12 Oz Nitro,10,0,0,0,0,0,0,0,0,0
+12 Oz Pistachio Latte,390,19,7.5,0,37.5,250,43,2,38,14
+12 Oz Red Eye,0,0,0,0,0,0,0,0,0,0
+12 Oz Steamed Milk,190,10,6.5,0,37.5,150,15,0,14,10
+12 Oz Turmeric & Honey Latte,240,10,6.5,0,37.5,150,29,1,24,10
+16 Oz Americano,0,0,0,0,0,0,0,0,0,0
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+16 Oz Cafe Au Lait,80,4,2.5,0,15,75,6,0,6,4
+16 Oz Chai Latte,170,6,4,0,22.5,95,25,0,24,6
+16 Oz Coffee,0,0,0,0,0,15,0,0,0,0
+16 Oz Cold Brew,0,0,0,0,0,0,0,0,0,0
+16 Oz Cold Brew - Keg,0,0,0,0,0,0,0,0,0,0
+16 Oz Cold Milk,300,16,10,0,60,240,24,0,22,16
+16 Oz Decaf Americano,0,0,0,0,0,0,0,0,0,0
+16 Oz Decaf Latte,230,12,7.5,0,45,180,18,0,17,12
+16 Oz Decaf Mocha,450,27,16.5,0,45,180,36,0,32,15
+16 Oz Hot Chocolate,560,35,21.5,0,45,180,45,0,39,16
+16 Oz Iced Black Tea - Cup,0,0,0,0,0,20,0,0,0,0
+16 Oz Iced Blood Orange Hibiscus Tea - Cup,0,0,0,0,0,20,0,0,0,0
+16 Oz Iced Green Tea - Cup,0,0,0,0,0,20,0,0,0,0
+16 Oz Iced Turmeric & Honey Latte,240,10,6.5,0,37.5,150,29,0,24,10
+16 Oz Latte,230,12,7.5,0,45,180,18,0,17,12
+16 Oz London Fog,150,4,2.5,0,15,60,24,0,23,4
+16 Oz Matcha Latte,230,12,7.5,0,45,180,18,0,17,12
+16 Oz Mocha,450,27,16.5,0,45,180,36,0,32,15
+16 Oz Nitro,10,0,0,0,0,0,0,0,0,0
+16 Oz Red Eye,0,0,0,0,0,15,0,0,0,0
+16 Oz Sparkling Matcha Lemonade,80,0,0,0,0,21,0,0,0,20
+16 Oz Steamed Milk,300,16,10,0,60,240,24,0,22,16
+8 Oz Decaf Flat White,110,6,4,0,2.5,90,9,0,8,6
+8 Oz Flat White,110,6,4,0,2.5,90,9,0,8,6
+Blood Orange Hibiscus Tea - Cup,0,0,0,0,0,15,0,0,0,0
+Blood Orange Hibiscus Tea - Pot,0,0,0,0,0,25,0,0,0,0
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Box Of Coffee - (8 servings),0,0,0,0,0,0,0,0,0,0
+Cappuccino,110,6,4,0,22.5,90,9,0,8,6
+Chamomile Tea - Cup,0,0,0,0,0,0,0,0,0,0
+Chamomile Tea - Pot,0,0,0,0,0,0,0,0,0,0
+Cortado,80,4,2.5,0,15,60,6,0,6,4
+Decaf Cappuccino,110,6,4,0,22.5,90,9,0,8,6
+Decaf Cortado,80,4,2.5,0,15,60,6,0,6,4
+Decaf Double Espresso,0,0,0,0,0,0,0,0,0,0
+Decaf Macchiato,0,0,0,0,0,0,0,0,0,0
+Double Espresso,80,4,2.5,0,15,60,6,0,6,4
+Earl Grey Tea - Cup,0,0,0,0,0,0,0,0,0,0
+Earl Grey Tea - Pot,0,0,0,0,0,0,0,0,0,0
+English Breakfast Tea - Cup,0,0,0,0,0,0,0,0,0,0
+English Breakfast Tea - Pot,0,0,0,0,0,0,0,0,0,0
+Espresso Shot,0,0,0,0,0,0,0,0,0,0
+Golden Green Tea - Cup,0,0,0,0,0,0,0,0,0,0
+Golden Green Tea - Pot,0,0,0,0,0,0,0,0,0,0
+Iced 12 Oz Americano,0,0,0,0,0,0,0,0,0,0
+Iced 12 Oz Chai Latte,120,4,2.5,0,15,65,17,0,16,4
+Iced 12 Oz Americano,0,0,0,0,0,0,0,0,0,0
+Iced 12 Oz Decaf Honey Halva Latte,190,9,4.5,0,22.5,110,21,0,17,7
+Iced 12 Oz Decaf Latte,130,7,4.5,0,26.5,105,11,0,10,7
+Iced 12 Oz Decaf Mocha,280,17.5,10.5,0,22.5,90,23,0,20,8
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Iced 12 Oz Honey Halva Latte,190,9,4.5,0,22.5,110,21,0,17,7
+Iced 12 Oz Latte,130,7,4.5,0,26.5,105,11,0,10,7
+Iced 12 Oz Matcha Latte,130,7,4.5,0,26.5,105,11,0,10,7
+Iced 12 Oz Mocha,280,17.5,10.5,0,22.5,90,23,0,20,8
+Iced 12 Oz Red Eye (W/Concentrate),0,0,0,0,0,0,0,0,0,0
+Iced 12 Oz Red Eye (W/Keg),0,0,0,0,0,0,0,0,0,0
+Iced 16 Oz Americano,0,0,0,0,0,0,0,0,0,0
+Iced 16 Oz Black Sesame Latte,360,21,6.5,0,30,190,34,1,29,11
+Iced 16 Oz Chai Latte,150,5,3,0,19,80,21,0,20,5
+Iced 16 Oz Decaf Americano,0,0,0,0,0,0,0,0,0,0
+Iced 16 Oz Decaf Black Sesame Latte,360,21,6.5,0,30,190,34,1,29,11
+Iced 16 Oz Decaf Latte,190,10,6.5,0,37.5,150,15,0,14,10
+Iced 16 Oz Decaf Mocha,370,23,14,0,30,120,30,0,26,11
+Iced 16 Oz Decaf Pistachio Latte,350,17,6,0,30,220,40,2,35,12
+Iced 16 Oz Latte,190,10,6.5,0,37.5,150,15,0,14,10
+Iced 16 Oz Matcha Latte,170,9,5.5,0,34,135,14,0,12,9
+Iced 16 Oz Mocha,370,23,14,0,30,120,30,0,26,11
+Iced 16 Oz Pistachio Latte,350,17,6,0,30,220,40,2,35,12
+Iced 16 Oz Red Eye (W/Concentrate),0,0,0,0,0,0,0,0,0,0
+Iced 16 Oz Red Eye (W/Keg),0,0,0,0,0,0,0,0,0,0
+Kale And Apple Juice G&G,120,0,0,0,0,55,29,2,19,2
+Macchiato,80,4,2.5,0,15,60,6,0,6,4
+Mint Lemonade G&G,130,0,0,0,0,10,34,0,31,0
+Moroccan Mint Tea - Cup,0,0,0,0,0,15,0,0,0,0
+Moroccan Mint Tea - Pot,0,0,0,0,0,25,0,0,0,0
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Orange Juice G&G,360,1,0,0,0,81,2,65,0
+Pear Juice G&G,170,0,0,0,0,15,42,36,0
+Preserved Fig - Lemon - & Mint Soda,160,0,0,0,0,30,0,33,0
+Water - Tatte,0,0,0,0,0,0,0,0,0
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Add Arugula,5,0,0,0,0,0,0,0,0,0
+Add Avocado - (about half an avocado),160,15,2,0,5,9,7,1,2
+Add Bacon - (2 slices),100,8,2.5,0,20,360,0,0,0,7
+Add Butter - (2 packets),120,12,8,0,30,100,0,0,0,1
+Add Cheddar Cheese - (1 slice),90,7,5,0,20,790,2,0,0,1
+Add Chicken - (4 oz),160,7,1,0,70.5,40,0,0,0,4
+Add Edamame,60,2.5,0,0,0,0,4,3,1,2
+Add Egg,70,4.5,1.5,0,215,65,1,2,0,2
+Add Fava Beans,30,0,0,0,0,0,0,0,0,0
+Add Feta,130,10,7,0,20,790,2,0,0,11
+Add Goat Cheese,170,13,10,0,30,290,0,2,7,5
+Add Granola,210,12,1.5,0,25,21,2,7,5
+Add Ham - (3.5 oz),150,8,3.5,0,50,1050,5,0,2,13
+Add Halloumi Cheese,200,15,9,0,50,610,2,2,5,13
+Add Jam,90,0,0,0,0,15,23,2,0,0
+Add Lamb Meatball - (2.4 oz),160,12,5,0,320,1,0,0,0,11
+Add Maple Syrup,110,0,0,0,26,24,0,0,0,0
+Add Rice,290,7,1,0,0,720,50,0,0,4
+Add Roasted Salmon - (5 oz),300,20,2.5,0,74.5,100,0,0,0,36
+Add Roll,170,3.5,1.5,0,15,670,0,0,0,4
+Add Short Rib - (3.5 oz),150,3.5,1.5,0,45,480,0,0,0,16
+Add Smoked Salmon - (2 oz),70,2.5,0,0,30,790,0,0,0,13
+Add Sliced Cucumber,5,0,0,0,0,140,0,0,0,0
+Add Sliced Tomato,10,0,0,0,0,2,0,0,0,0
+Add Spinach,10,0.5,0,0,0,0,0,0,0,0
+Add Tomato Jam,30,0,0,0,390,7,1,6,0,0
+Add Tuna Salad - (5 oz),330,25,9,0,55,230,4,0,2,90
+Add Turkey - (2 oz),50,0.5,0,0,30,410,1,0,2,11
+Dressing - Crunchy Halloumi Salad,290,31,3,0,0,230,2,0,0,1
+Dressing - Fattoush Salad,150,16,2.5,0,3,0,7,1,0,0
+Dressing - Green & Nutty Salad,280,27,5,0,220,10,9,1,0,0
+Dressing - Greens with Feta Avocado Mousse,140,16,2.5,0,160,2,0,1,0,0
+Dressing - Maple, Squash & Chicken Salad,290,31,3,0,0,840,1,0,0,0
+Dressing - Tuna Niçoise Salad,290,33,0,0,0,0,0,0,0,0
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+GF Chickpea - Fava Plate,480,34.5,4.5,0,0,1160,40,8,6,9
+GF Lamb Kebab Plate,860,59,19,0,104,1930,58,10,15,28
+GF Roasted Mushroom - Spinach - Potato Bowl,760,62,31.5,1.5,348.5,1140,40,4,6,15
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+GF Crunchy Halloumi Salad,1180,96.5,23,0,107,1790,49,8,24,35
+GF Green - Nutty Salad,950,58.5,14.5,0,28.5,670,86,14,57,30
+GF Greens with Feta Avocado Mousse,420,34.5,6.5,0,8.5,700,24,4,6,7
+GF Maple - Squash & Chicken Salad,580,25,6,0,90.5,1060,61,9,26,32
+GF Tuna Nicoise Salad,930,73.5,11,0,237.5,1860,40,6,8,103
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+GF Bacon, Potato -&- Mushroom Shakshuka,1640,143.5,68,3,739.5,2510,62,6,14,37
+GF Meatball Shakshuka,980,56.5,19.5,0,532,3130,78,5,32,41
+GF Traditional Shakshuka,760,40,13,0,480.5,2910,73,4,29,31
+"
+"
+Menu Item Name,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Chicken And Kale - Bowl (GF),220,11.5,2.5,0,68,1180,18,2,3,13
+Chicken And Kale - Cup (GF),180,9,1.5,0,45.5,830,16,2,2,9
+Chicken Swiss Chard And Potato - Bowl (GF),240,12,2.5,0,71,1260,21,2,4,14
+Chicken Swiss Chard And Potato - Cup (GF),190,9,1.5,0,47.5,880,18,1,3,10
+Potato Leek - Bowl (GF),180,8,1,0,0,750,28,2,3,3
+Potato Leek - Cup (GF),150,6.5,0.5,0,0,540,23,2,2,2
+Red Lentil - Bowl (GF),160,5.5,0.5,0,0,400,24,2,2,5
+Red Lentil - Cup (GF),130,5,0.5,0,0,310,20,2,2,4
+Tomato Basil - Bowl (GF),410,27,10,0.5,45,1960,36,1,18,9
+Tomato Basil - Cup (GF),300,19,7,0.5,29.5,1350,28,1,13,6
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+GF Avocado Tartine,510,37.5,6.5,0,430,1410,35,6,4,16
+GF Smoked Salmon Avocado Tartine,690,57.5,9,0,450,1490,35,7,5,18
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+""G&G Berries - Grapes"",80,0.5,0,0,0,0,21,4,14,1
+""G&G Chicken Salad"",400,22,5.5,0,123.5,400,15,11,35
+""G&G Labneh"",970,90.5,61.5,0,279,650,25,0,12,15
+""G&G Mediterranean Farro Salad"",650,41,7.5,0,12.5,1330,62,6,5,14
+""G&G Muesli"",710,53,29,0,125,320,47,5,24,13
+""G&G Pepper Cashew Relish"",500,42,7,0,0,1140,24,2,7,7
+""G&G Roasted Pear - Labneh - Granola"",720,39,20,0,83.5,220,81,6,54,10
+""G&G Tomato Soup"",430,30,13,0.5,60,2430,32,1,23,11
+""G&G Tuna Salad"",530,39.5,15,0,84.5,370,6,0,3,143
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Broccolini - Lentil & Couscous Bowl,570,25,4.5,0,215,1430,62,10,15,24
+Cavatelli With Winter Vegetables,730,33,16.5,1,68.5,1520,91,8,16,20
+Chickpea & Fava Plate,640,31,4,0,0,1350,74,11,10,14
+Flatbread Slice - Mushroom, Caramelized Onion & Potato,540,24,6.5,0,24.5,1160,66,3,9,15
+Flatbread Slice - Tomato Mozzarella,660,40,9.5,0,21.5,1160,60,2,10,16
+Lamb Kebab Plate,940,52,18.5,2,104,1990,80,12,18,32
+Quiche Leek - Potato & Spinach & Salad,900,64,37,2,253.5,1030,64,5,7,18
+Quiche Lorraine & Salad,1080,79,45,2,326.5,1190,64,4,8,29
+Roasted Mushroom - Spinach & Potato Bowl,860,61,32,1.5,348.5,1350,60,5,5,19
+Roasted Salmon - Winter Vegetable Rice Bowl,950,58,8,0,75,1720,74,5,2,45
+Roasted Squash - Mushroom Farro Bowl,820,51.5,14,0,249.5,1790,74,7,3,25
+Short Rib - Broccolini - Lentil & Couscous Bowl,960,26,5.5,0,77,2170,106,18,26,57
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Crunchy Halloumi Salad,1180,86.5,22,0,120,2320,66,9,26,38
+Fattoush Salad,1050,82.5,19,0,81,2000,65,7,16,21
+Green - Nutty Salad,1050,60,15,0,42,1210,103,15,59,33
+Greens with Feta Avocado Mousse,500,35,7,0,21.5,1230,42,5,9,10
+Maple - Squash & Chicken Salad,670,25.5,6.5,0,103.5,1590,78,9,28,35
+Tuna Nicoise Salad,1020,75,11.5,0,251,2390,56,6,9,106
+"
+"
+Name,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+BLAT,870,55,10.5,0,83.5,1650,73,7,11,25
+Chicken-Pita-Sandwich,480,13,3,0,84,670,51,4,8,31
+Chicken-Salad-Sandwich,860,43.5,10.5,0,120.5,1460,75,7,14,40
+Fresh-Mozzarella-Sandwich,940,51,15.5,0,50.5,1520,82,5,4,32
+Grilled-Cheese,850,43,23.5,0,131,2120,70,3,2,35
+Kids-Sandwich,430,16.5,4,0,43.5,710,64,3,7,30
+Lamb-Kebab-Pita,670,34,0,0,119.5,1150,53,4,9,30
+Prosciutto-Panini-Sandwich,990,37,19.5,0,127.5,1570,81,5,31,46
+Roasted-Cauliflower-Sandwich,520,22.5,5.5,0,15.5,1830,67,9,16,13
+Roasted-Salmon-Sandwich,1010,68,9.5,0,120,1070,67,3,9,46
+Roasted-Squash-&-Mushroom-Sandwich,780,18.5,2.5,0,28,1850,128,12,28,23
+Short-Rib-Grilled-Cheese-Sandwich,640,20.5,5.5,0,100.5,1480,68,3,10,32
+Tuna-Sandwich,870,49,17.5,0,323,990,70,3,10,106
+Turkey-Avocado-Sandwich,740,41,7.5,0,81.5,1460,76,10,9,23
+Turkey-BLAT,850,48,8.5,0,62,1770,73,12,8,32
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Bacon- Potato & Mushroom Shakshuka,1830,139,68.5,3,739.5,2940,103,8,12,46
+Meatball Shakshuka,1230,58,20,0,575,3600,130,7,38,50
+Traditional Shakshuka,1010,41,13.5,0,523.5,3380,125,6,35,40
+"
+"
+Name,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Carrot - Bowl,310,11.5,5,0.5,31.5,2050,49,6,14,6
+Carrot - Cup,260,9,3.5,0,25.5,1590,43,4,10,5
+Chicken & Pea - Bowl,340,12.5,2.5,0,87,1460,39,4,6,18
+Chicken & Pea - Cup,280,9.5,2,0,62.5,1200,36,3,5,13
+Chicken And Kale - Bowl,310,12,2.5,0,81.5,1710,36,3,5,12
+Chicken And Kale - Cup,260,9.5,2,0,58.5,1370,34,2,5,12
+Chicken Swiss Chard And Potato - Bowl,330,12.5,2.5,0,84.5,1790,38,3,6,17
+Chicken Swiss Chard And Potato - Cup,270,9.5,2,0,60.5,1420,35,2,5,13
+Mushroom And Farro - Bowl,260,7,1,0,13,1290,44,3,5,7
+Mushroom And Farro - Cup,230,6,0.5,0,13,1080,39,3,5,6
+Potato Leek - Bowl,270,8,1,0,13,1280,46,3,5,6
+Potato Leek - Cup,240,7,1,0,13,1080,40,3,5,5
+"
+"
+Menu Item,Calories (cal),Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Red Lentil - Bowl,250,6,0.5,0,13,930,42,3,4,8
+Red Lentil - Cup,220,5.5,0.5,0,13,850,38,3,4,7
+Sweet Potato - Bowl,320,10.5,4,0.5,29,1360,53,4,12,6
+Sweet Potato - Cup,270,8.5,3,0,23.5,1130,45,3,9,5
+Tomato Basil - Bowl,490,27,10,0.5,60,2490,54,2,21,12
+Tomato Basil - Cup,380,19.5,7,0.5,43,1880,46,2,15,10
+"
+"
+Menu Item,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+Avocado Tartine,670,29,6,0,430,1830,75,8,2,26
+Prosciutto - Fried Egg Tartine,660,42.5,17,0,301,910,37,2,3,32
+Prosciutto - Squash - Pomegranate Tartine,420,9.5,3.5,0,25,850,66,4,18,16
+Smoked Salmon Avocado Tartine,740,55.5,9.5,0,43.5,1570,45,9,3,22
+"
+"
+Name,Calories (cal) / Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+6"" Cake - Belgian Chocolate Mousse (8 slices),440,33,20.5,0.5,55,80,28,0,8,4
+"
+"
+Menu Item,Calories (cal)/Serving,Total Fat (g),Sat Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Dietary Fiber (g),Sugar (g),Protein (g)
+6""-Cheesecake,-Blue Fruit (8 slices),390,30,18.5,1,92,170,27,1,16,5
+6""-Cheesecake,-Crumb (8 slices),450,34,21.5,1,104,240,32,2,16,5
+6""-Cheesecake,-Red Fruit (8 slices),390,30,18.5,1,92,170,28,2,16,5
+6""-Dark Chocolate Mousse (8 slices),440,33,20,0.5,124,80,27,0,20,7
+6""-Pistachio Crush (8 slices),490,42,20,1,88.5,60,25,3,19,8
+6""-Tart,-Lemon Mint (8 slices),600,45,27.5,2,180.5,85,47,0,37,5
+6""-Tart,-Pear (8 slices),420,26,11,0.5,77.5,160,43,3,29,6
+6""-Tiramisu (8 slices),200,11,7,0,66.5,50,21,0,15,5
+8""-Halva Bomb (12 slices),640,49,28.5,1,75.5,125,40,2,27,7
+9""-Cake,-Belgian Chocolate Mousse (16 slices),570,43.5,27,1,72,100,37,0,10,6
+9""-Cake,-Dark Chocolate Mousse (12 slices),540,40.5,24.5,1,147,100,33,0,24,8
+9""-Cake,-Honey Apple (8 slices),510,25,6.5,0.5,58.5,220,67,4,32,8
+9""-Cheesecake,-Blue Fruit (12 slices),490,38,23.5,1,116.5,230,35,2,20,6
+9""-Cheesecake,-Crumbs (12 slices),550,41.5,26,1,127.5,290,39,7,21,3
+9""-Cheesecake,-Red Fruit (12 slices),500,38,23.5,1,116.5,230,37,3,20,6
+9""-Pistachio Crush (12 slices),700,59,29.5,1.5,132,100,38,4,30,10
+9""-Tart,-Lemon Mint (12 slices),590,42.5,26,1.5,170.5,100,50,2,36,5
+9""-Tart,-Pear (12 slices),360,19.5,9.5,0.5,67.5,135,43,2,26,6
+9""-Tiramisu (12 slices),320,17.5,12,0,106.5,80,32,0,24,6
+Cake,-Coffee (12 slices),660,36,16,0.5,115.5,490,76,3,42,10
+Pie,-Apple (6 slices),530,17.5,11,0.5,46.5,360,92,4,21,3
+Pie,-Pistachio Cherry (9 slices),480,30,15,1,89.5,190,52,3,22,6
+Pie,-Salted Honey Hazelnut Pecan (8 slices),680,45.5,18,1,120.5,380,67,4,42,8
+Pie,-Pumpkin with Candied Walnuts (8 slices),370,18.5,9,0.5,106,270,47,2,26,7
+Pound Cake,-Gingerbread (10 slices),610,24,14.5,1,167.5,280,96,2,66,8
+Pound Cake,-Pumpkin (10 slices),650,28,15,1,165,250,91,3,61,8
+Tart,-Almond - Long (8 slices),770,59.5,9,0.5,54,125,49,9,16,20
+Tart,-Mixed Nut - Long (8 slices),790,61.5,18,1,74,160,57,6,27,14
+Tart,-Pecan - Long (8 slices),790,69.5,14,0.5,54,110,42,8,16,14
+"

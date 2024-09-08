@@ -1,5 +1,3 @@
-Response
-"
 Menu Item, Serving Size (oz), Total Calories (kcal), Calories from Fat (kcal), Total Fat (g), Saturated Fat (g), Trans Fat (g), Cholesterol (mg), Sodium (mg), Total Carbohydrates (g), Dietary Fiber (g), Total Sugar (g), Protein (g)
 Barq's Root Beer, 20, 567, 270, 0, 0, 0, 0, 90, 73, 0, 73, 0
 Coca-Cola, 20, 567, 240, 0, 0, 0, 0, 65, 67, 0, 67, 0
@@ -13,9 +11,6 @@ Fuze Unsweet Tea, 20, 567, 0, 0, 0, 0, 0, 85, 0, 0, 0, 0
 Fuze Raspberry Tea, 20, 567, 140, 0, 0, 0, 0, 85, 38, 0, 37, 0
 Glaceau Vitaminwater xxx, 20, 567, 120, 0, 0, 0, 0, 65, 32, 0, 31, 0
 Gold Peak Sweetened Black Tea, 20, 567, 190, 0, 0, 0, 0, 80, 52, 0, 52, 0
-"
-"
-""Menu Item"",""Serving Size (oz)"",""Total Calories (kcal)"",""Calories From Fat (kcal)"",""Total Fat (g)"",""Saturated Fat (g)"",""Trans Fat (g)"",""Cholesterol (mg)"",""Sodium (mg)"",""Total Carbohydrates (g)"",""Dietary Fiber (g)"",""Total Sugar (g)"",""Protein (g)""
 ""Hi-C Poppin' Pink Lemonade"",20,220,0,0,0,0,0,160,61,0,59,0
 ""Hi-C Flashin' Fruit Punch"",20,260,0,0,0,0,0,120,71,0,69,0
 ""Luzianne"",20,0,0,0,0,0,0,0,0,0,0,0
@@ -27,9 +22,6 @@ Gold Peak Sweetened Black Tea, 20, 567, 190, 0, 0, 0, 0, 80, 52, 0, 52, 0
 ""Rituals"",20,0,0,0,0,0,0,0,0,0,0,0
 ""Seagram's Ginger Ale"",20,230,0,0,0,0,0,75,59,0,58,0
 ""Sprite"",20,230,0,0,0,0,0,115,61,0,61,0
-"
-"
-Menu Item,Serving Size (oz),Total Calories (kcal),Calories from Fat (kcal),Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Total Carbohydrates (g),Dietary Fiber (g),Total Sugar (g),Protein (g)
 Regular Chicken Platter,18,521,648,93,10,3,0,245,1296,79,2,4
 Small Chicken Platter,13,356,471,65,7,2,0,163,926,61,1,2
 Regular Beef Gyro Platter,18,521,933,320,36,16,1,107,2700,113,2,4
@@ -48,9 +40,6 @@ Combo Sandwich,10,278,516,142,16,7,0,117,1372,58,2,4
 Falafel Sandwich,10,276,641,232,26,4,0,1259,82,14,5
 Chicken/Falafel Sandwich,10,295,597,183,20,4,0,82,1222,11,5,32
 Beef Gyro/Falafel Sandwich,10,295,694,259,29,8,0,36,1690,82,10,5
-"
-"
-Menu Item,Serving Size (oz),Total Calories (kcal),Calories from Fat (kcal),Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Total Carbohydrates (g),Dietary Fiber (g),Total Sugar (g),Protein (g)
 Hummus,6,170,377,212,24,4,0,756,29,13,0,12
 Baba Ghanoush,6,170,187,14,2,0,0,678,11,4,0,4
 Tabbouleh,6,170,68,1,0,0,0,346,15,4,1,3
@@ -68,4 +57,3 @@ White Sauce,3,83,450,381,42,6,54,540,17,7,1,0
 White Sauce,2,57,300,254,28,4,36,360,11,7,1,0
 Hot Sauce,0.25,7,7,2,0,0,89,1,1,0,0
 BBQ Sauce,0.2,6,11,0,0,0,56,3,0,2,0
-"
