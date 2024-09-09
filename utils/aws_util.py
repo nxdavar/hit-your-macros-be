@@ -3,18 +3,22 @@ import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError
 
 
+"""
+Generates presigned URLs for all files within a specific folder in an S3 bucket.
+Checks if the presigned URLs have expired before generating new ones.
+
+:param bucket_name: Name of the S3 bucket.
+:param folder_prefix: The prefix (folder path) within the bucket.
+:param expiration: Time in seconds for the presigned URL to remain valid (default: 3600 seconds).
+:return: A dictionary mapping file names to their presigned URLs.
+"""
+
+
+
 def generate_presigned_urls(
     presigned_urls_cache: dict, bucket_name: str, folder_prefix: str, expiration=3600
 ):
-    """
-    Generates presigned URLs for all files within a specific folder in an S3 bucket.
-    Checks if the presigned URLs have expired before generating new ones.
 
-    :param bucket_name: Name of the S3 bucket.
-    :param folder_prefix: The prefix (folder path) within the bucket.
-    :param expiration: Time in seconds for the presigned URL to remain valid (default: 3600 seconds).
-    :return: A dictionary mapping file names to their presigned URLs.
-    """
     s3_client = boto3.client("s3")
 
     try:

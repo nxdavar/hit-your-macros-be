@@ -1,14 +1,8 @@
 # external imports:
-from langchain.prompts import ChatPromptTemplate, PromptTemplate
-from langchain_core.runnables import RunnableLambda, RunnablePassthrough
-from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
-from openai import OpenAI
 import csv
 import os
-import boto3
 import base64
 import httpx
 from dotenv import load_dotenv

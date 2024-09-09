@@ -1,3 +1,5 @@
+from string import Template
+
 # prompt used when extracting nutrition data from tabular data on images
 
 tabular_data_extraction_prompt = [
@@ -9,16 +11,13 @@ tabular_data_extraction_prompt = [
         + "Also if the menu item name contains a comma, please replace it with a hyphen. Likewise, strip any of the following characters"
         + " from the menu item name: ['†', '*, '®']",
     },
+    # Template("data:image/jpeg;base64, $base64_image_1")
     {
         "type": "image_url",
-        "image_url": {
-            "url": f"data:image/jpeg;base64, INSERT_BASE64_ENCODED_IMAGE_DATA_HERE_IN_BRACES"
-        },
+        "image_url": Template("data:image/jpeg;base64, $base64_image_1"),
     },
     {
         "type": "image_url",
-        "image_url": {
-            "url": f"data:image/jpeg;base64,INSERT_BASE64_ENCODED_IMAGE_DATA_HERE_IN_BRACES"
-        },
+        "image_url": Template("data:image/jpeg;base64, $base64_image_2"),
     },
 ]

@@ -4,6 +4,8 @@ from io import BytesIO
 from PIL import Image
 from dotenv import load_dotenv
 import requests
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
 
 
 # internal imports:
@@ -44,14 +46,21 @@ def extract_table_data(textract_response):
             table = []
             for relationship in block["Relationships"]:
                 if relationship["Type"] == "CHILD":
-                    rows = []
+                    rows = []  # This will store all the cells in the current row
+                    current_row_index = None  # To keep track of row positioning
+
+                    # Iterate over all child blocks (cells)
                     for child_id in relationship["Ids"]:
                         for cell_block in blocks:
                             if (
                                 cell_block["Id"] == child_id
                                 and cell_block["BlockType"] == "CELL"
                             ):
+                                # Extract row index to group cells into rows
+                                row_index = cell_block["RowIndex"]
                                 text = ""
+
+                                # Check if the cell contains text or other children
                                 if "Relationships" in cell_block:
                                     for inner_child in cell_block["Relationships"]:
                                         if inner_child["Type"] == "CHILD":
@@ -64,8 +73,25 @@ def extract_table_data(textract_response):
                                                         == "WORD"
                                                     ):
                                                         text += word_block["Text"] + " "
-                                rows.append(text.strip())
-                    table.append(rows)
+                                text = text.strip()
+
+                                # Ensure rows are grouped by RowIndex
+                                if current_row_index is None:
+                                    current_row_index = row_index
+
+                                # If we detect a new row, append the previous row and reset
+                                if row_index != current_row_index:
+                                    table.append(rows)
+                                    rows = []  # Reset for the new row
+                                    current_row_index = row_index
+
+                                # Append the cell's text to the current row
+                                rows.append(text)
+
+                    # After the loop, append the last row
+                    if rows:
+                        table.append(rows)
+
             tables.append(table)
 
     return tables
@@ -76,6 +102,7 @@ def display_table_data(tables):
     for idx, table in enumerate(tables):
         print(f"Table {idx + 1}:")
         for row in table:
+            print('this is row: ', row)
             print("\t".join(row))
         print("\n")
 
@@ -84,6 +111,26 @@ def display_table_data(tables):
 
 
 def post_processing(table_row: str):
+    model = ChatOpenAI(model="gpt-4o-mini")
+
+    system_message = SystemMessage(
+        content=[
+            {
+                "type": "text",
+                "text": " You are going to be given some nutritional information in the form of text outputted from an OCR system"
+                + "You will also be given an image ofr ",
+            },
+            {
+                "type": "text",
+                "text": "An example of could be the following:"
+                + "<user>: data:image/jpeg;base64,https://www.goprep.com/wp-content/uploads/2019/06/screen-shot-2019-06-19-at-6.09.23-pm.png"
+                + "<system>: Cajun Chicken with Asapragus and Brown Rice,460,6,1.5,0,120,3530,61,7,3,0,42,1,0,960",
+            },
+        ],
+    )
+
+    res = model.invoke([system_message])
+
     return -1
 
 
@@ -103,7 +150,7 @@ if __name__ == "__main__":
             "this is the url we will be analyzing with textract: ", menu_presigned_url
         )
 
-        if file_key == folder_name or file_key.find("header") != -1:
+        if file_key == folder_name:
             continue
         response = analyze_image(menu_presigned_url)
 
