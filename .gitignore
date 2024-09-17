@@ -1,3 +1,5 @@
 hit-your-macros-be
 .env
 restaurant_assets/*
+utils/__pycache__
+__pycache__
