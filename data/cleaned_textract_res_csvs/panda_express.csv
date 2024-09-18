@@ -1,4 +1,4 @@
-Name, Cal., Cal. Fat, Total Fat, Sat. Fat, Trans. Fat, Chol, Sodium, Carb, Fiber, Sugar, Protein
+"Serving Size (oz)", "Calories", "Calories From Fat (g)", "Total Fat (g)", "Saturated Fat (g)", "Trans Fat (g)", "Cholesterol (mg)", "Sodium (mg)", "Total Carb (g)", "Dietary Fiber (g)", "Sugars (g)", "Protein (g)"
 'Steamed Ginger Fish -', '56', '70', '35', '0', '4', '1', '0', '0', '15', '660', '3', '0', '0', '2', '0', '5'
 'Pepsi - (Kids)', '12', '130', '0', '0', '0', '0', '0', '0', '35', '37', '0', '0', '35', '0', '0'
 'Diet Pepsi - (Kids)', '12', '0', '0', '0', '0', '0', '0', '0', '35', '0', '0', '0', '0', '0'
@@ -122,7 +122,6 @@ Name, Cal., Cal. Fat, Total Fat, Sat. Fat, Trans. Fat, Chol, Sodium, Carb, Fiber
 'String Bean Chicken Breast', '160', '190', '80', '9', '2', '0', '34', '590', '13', '4', '4', '14'
 'SweetFire Chicken Breast', '5.8', '380', '140', '15', '3', '0', '35', '320', '47', '1', '27', '13'
 'Sweet & Sour Chicken Breast', '155', '300', '110', '12', '3', '0', '25', '260', '40', '1', '24', '10'
-'BEEF', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'
 'Beijing Beef', '5.6', '470', '240', '26', '5', '0', '25', '660', '46', '1', '24', '13'
 'Broccoli Beef', '5', '150', '70', '7', '1', '0', '12', '520', '13', '2', '7', '9'
 'Shanghai Angus Steak', '154', '310', '170', '19', '4', '0', '50', '830', '16', '1', '11', '22'
@@ -130,3 +129,4 @@ Name, Cal., Cal. Fat, Total Fat, Sat. Fat, Trans. Fat, Chol, Sodium, Carb, Fiber
 'Crispy Shrimp - (Entree)', '3.5', '260', '120', '13', '2', '0', '60', '800', '26', '1', '2', '9'
 'Honey Walnut Shrimp', '3.7', '360', '200', '23', '3.5', '0', '100', '440', '35', '2', '9', '13'
 'Golden Treasure Shrimp -', '5', '360', '160', '18', '3', '0', '100', '440', '35', '2', '14', '14'
+

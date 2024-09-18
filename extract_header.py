@@ -2,7 +2,8 @@
 
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
-from string import Template
+import base64
+import httpx
 
 
 # internal imports:
@@ -41,11 +42,15 @@ def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
         ],
     )
 
+    header_img_data = base64.b64encode(httpx.get(curr_header_img_url).content).decode(
+        "utf-8"
+    )
+
     human_message = HumanMessage(
         content=[
             {
-                "type": "text",
-                "text": f"""{curr_header_img_url}""",
+                "type": "image_url",
+                "image_url": {"url": f"data:image/jpeg;base64,{header_img_data}"},
             },
         ],
     )
