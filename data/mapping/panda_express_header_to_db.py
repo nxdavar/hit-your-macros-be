@@ -1,4 +1,4 @@
-# Mapping for Restaurant Table
+# Mapping headers for the cleaned Panda Express CSV to the menu_item table in the database
 panda_express_menu_item_mapping = {
     "Menu Item Name": "name",
     "Serving Size (oz)": "serving_size_oz",
