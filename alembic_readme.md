@@ -1,3 +1,9 @@
 ### Alembic Commmands:
-Command to apply migration changes applied to the db/schema.py file: 
-alembic revision --autogenerate -m "describe your changes here"
+
+#### Performing a Migration:
+
+1. Ensuring the target table is sync:
+   `alembic upgrade head`
+
+2. If you made a change to the schema file and want alembic to autogenerate a mirgation file, use the following command:
+   `alembic upgrade head`
