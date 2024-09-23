@@ -8,9 +8,12 @@ import os
 # internal imports:
 from utils.file_names import MAPPING, CLEANED_TEXTRACT_RES_CSVS
 from utils.file_util import get_filenames_in_folder
-from db.schema import Restaurant
+from db.models.restaurant import Restaurant
 from db.table_type_mapping import menu_item_type_mapping
 from utils.mapping_helpers import get_restaurant_module, get_function_from_module
+from db.utils.db_session import get_db, get_engine
+from db.models.restaurant import Restaurant
+from db.queries.restaurant_queries import get_restaurant_id_one, add_new_restaurant
 
 
 """
@@ -27,6 +30,8 @@ def normalize_seed_data(file_name, table_name):
 
     df = pd.read_csv(file_name)
 
+    engine = get_engine()
+
     res_name = file_name.split("/")[-1].split(".")[-2]
 
     attr_name = f"{res_name}_menu_item_mapping"
@@ -40,29 +45,33 @@ def normalize_seed_data(file_name, table_name):
     df = df[list(header_mapping.values())]
 
     # Step 6: Retrieve the foreign key value
-    engine = create_engine(os.getenv("DATABASE_URL"))
-    foreign_key_query = "SELECT restaurant_id FROM restaurant WHERE name = :res_name"
 
-    print("this is the foreign key: ", foreign_key_query)
+    session = next(get_db())
+    res_id = get_restaurant_id_one(session, res_name)
+    if res_id:
+        print("this is the restaurant id: ", res_id)
+    else:
+        restaurant = add_new_restaurant(session, res_name)
+        if restaurant:
+            res_id = restaurant.restaurant_id
+        print("restaurant not found, created new one: ", restaurant)
 
-    with engine.connect() as connection:
-        result = connection.execute(
-            foreign_key_query, {"res_name": res_name}
-        ).fetchone()
+    if res_id is None:
+        raise ValueError(f"Restaurant {res_name} not found in the database")
 
-        if result:
-            foreign_key_value = result[0]
-        else:
-            raise ValueError("Foreign key value not found.")
-
-    df["restaurant_id"] = foreign_key_value
+    df["restaurant_id"] = res_id
 
     # Step 8: Ensure data types match the database schema
 
-    df = df.astype(menu_item_type_mapping)
+    filtered_menu_item_type_mapping = {
+        key: value for key, value in menu_item_type_mapping.items() if key in df.columns
+    }
 
-    with engine.begin() as connection:
-        df.to_sql(f"""{table_name}""", con=connection, if_exists="append", index=False)
+    df = df.astype(filtered_menu_item_type_mapping)
+
+    with next(get_db()) as session:
+        df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
+        session.commit()
 
 
 def normalize_seed_for_folder():

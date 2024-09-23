@@ -22,10 +22,8 @@ DATABASE_URL = (
 )
 
 _engine = None
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=_engine)
 
 
-# Function to return the engine (singleton pattern)
 def get_engine():
     global _engine
     if _engine is None:
@@ -33,7 +31,9 @@ def get_engine():
     return _engine
 
 
+# Function to return the engine (singleton pattern)
 def get_db():
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=get_engine())
     db = SessionLocal()
     try:
         yield db

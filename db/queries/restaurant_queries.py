@@ -28,6 +28,13 @@ def get_restaurant_id_one(session: Session, res_name: str):
     return result
 
 
+def add_new_restaurant(session: Session, res_name: str):
+    new_restaurant = Restaurant(name=res_name)
+    session.add(new_restaurant)
+    session.commit()
+    return new_restaurant
+
+
 # Function to get restaurant_id based on restaurant name
 def get_restaurant_id(res_name):
     with Session(engine) as session:
