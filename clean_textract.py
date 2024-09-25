@@ -25,13 +25,13 @@ def clean_textract_row(textract_row: str, curr_res_name: str) -> str:
                 + "The first column represents the name of the menu item. Strip this column of any of the following characters: ['†', '*, '®', '™']."
                 + "Also, if the menu item name contains a comma, please replace it with a - and add a space before and after the hyphen."
                 + "All other columns are numerical. If any numerical column has a string, replace it with the closest number"
-                + "to what the column is describing. Then output the row as a csv row",
+                + "to what the column is describing. If a column is numerical, ensure that the number is a float and has no commas.",
             },
             {
                 "type": "text",
                 "text": "An example of could be the following:"
-                + "<user>: ['Add Splash of Oat Milk,(2 oz)', '30', '1.5', 'o', '0', '0', '25', '4', 'less than 1 gram', '2', '1']"
-                + "<system>: 'Add Splash of Oat Milk - (2 oz)', '30', '1.5', '0', '0', '0', '25', '4', '0', '2', '1'",
+                + "<user>: ['Add Splash of Oat Milk,(2 oz)', '30', '1.5', '0', '0', '0', '25', '4', 'less than 1 gram', '2', '1']"
+                + "<system>: 'Add Splash of Oat Milk - (2 oz)', 30, 1.5, 0, 0, 0, 25, 4, 0, 2, 1",
             },
         ],
     )
