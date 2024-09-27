@@ -13,4 +13,6 @@ OG_RES_ASSETS = BASE_DIR / "og_restaurant_assets"
 
 CLEANED_RES_CSVS = BASE_DIR / "cleaned_res_csvs"
 
+DF_READING_ANOMALIES = BASE_DIR / "df_reading_anomalies"
+
 CLEANED_TEXTRACT_RES_CSVS = BASE_DIR / "cleaned_textract_res_csvs"

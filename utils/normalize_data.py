@@ -3,11 +3,12 @@ import pandas as pd
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
+import csv
 
 
 # internal imports:
-from utils.file_names import MAPPING, CLEANED_TEXTRACT_RES_CSVS
-from utils.file_util import get_filenames_in_folder
+from utils.file_names import CLEANED_TEXTRACT_RES_CSVS, DF_READING_ANOMALIES
+from utils.file_util import get_filenames_in_folder, custom_read_csv
 from db.models.restaurant import Restaurant
 from db.table_type_mapping import menu_item_type_mapping
 from utils.mapping_helpers import get_restaurant_module, get_function_from_module
@@ -28,27 +29,34 @@ This function normalizes seed data from a CSV file to match the database schema.
 def normalize_seed_data(file_name, table_name):
     load_dotenv()
 
-    df = pd.read_csv(file_name)
+    print("this is the file name we are about to normalize: ", file_name)
+    res_name = file_name.split("/")[-1].split(".")[-2]
 
     engine = get_engine()
 
-    res_name = file_name.split("/")[-1].split(".")[-2]
-
+    # get the mapping between the names of the restaurant csv header and the database column names
     attr_name = f"{res_name}_menu_item_mapping"
 
     res_mappping_module = get_restaurant_module(res_name)
     header_mapping = get_function_from_module(res_mappping_module, attr_name)
+    print("this is the header mapping: ", header_mapping)
+
+    df = custom_read_csv(
+        file_name, f"""{DF_READING_ANOMALIES}/{res_name}_anomalies.csv"""
+    )
 
     df.columns = df.columns.str.strip()
+
+    # rename cols based on mapping
 
     df.rename(columns=header_mapping, inplace=True)
     df = df[list(header_mapping.values())]
 
-    # Step 6: Retrieve the foreign key value
+    # Retrieve the foreign key value
 
     df["restaurant_id"] = get_foreign_key(res_name)
 
-    # Step 8: Ensure data types match the database schema
+    # Ensure data types match the database schema
 
     filtered_menu_item_type_mapping = {
         key: value for key, value in menu_item_type_mapping.items() if key in df.columns
@@ -59,10 +67,6 @@ def normalize_seed_data(file_name, table_name):
     print("these were the invalid rows: ", invalid_rows)
 
     df = df.astype(filtered_menu_item_type_mapping)
-
-    # print out every row the df:
-    for index, row in df.iterrows():
-        print(row)
 
     # with next(get_db()) as session:
     #     df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
