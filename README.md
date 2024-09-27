@@ -21,7 +21,7 @@ Project-folder
   ├── data                <- Restaurant Data (mostly post processed data from workflows)
       |   └── cleaned_textract_res_csvs     <- Post Textract script processed files
       |   └── df_reading_anomalies          <- Post Pandas DF Helper function processed files
-      |   └── image_to_res_csvs             <- Post GPT script processed fiels
+      |   └── image_to_res_csvs             <- Post GPT script processed fields
   ├── scripts
   |   └── testing           <- Archived, mostly unused testing scripts
   ├── db                  <- Restaurant Data (mostly post processed data from workflows)
@@ -30,7 +30,7 @@ Project-folder
       |   └── queries       <- SQLAlchemy based query functions
       |   └── utils         <- DB Utils (i.e session creation)
       |   └── table_type_mapping.py     <- dictionary mapping types for all tables in db
-  ├── clean_textract.py   <- Textract script used to process fiels in S3
+  ├── clean_textract.py   <- Textract script used to process menu item images in S3
   ├── extract_header.py   <- GPT based script used to extract header as CSV
   ├── gpt_vision_non_tabular_script.py    <- GPT based script for menu items with non-tabular data
   ├── gpt_vision_tabular_script.py    <- GPT based script for menu items with tabular data
