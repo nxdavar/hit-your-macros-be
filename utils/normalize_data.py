@@ -2,8 +2,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
-import os
-import csv
+import uuid
 
 
 # internal imports:
@@ -68,9 +67,13 @@ def normalize_seed_data(file_name, table_name):
 
     df = df.astype(filtered_menu_item_type_mapping)
 
-    # with next(get_db()) as session:
-    #     df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
-    #     session.commit()
+    with next(get_db()) as session:
+        # Generate UUID for menu item if it doesn't exist
+        if "menu_item_id" not in df.columns:
+            df["menu_item_id"] = [str(uuid.uuid4()) for _ in range(len(df))]
+
+        df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
+        session.commit()
 
 
 """

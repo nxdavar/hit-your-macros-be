@@ -10,7 +10,7 @@ import os
 
 
 # internal imports:
-from db.schema import Base
+from db.schema import *
 
 load_dotenv()
 

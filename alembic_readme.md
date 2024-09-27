@@ -6,4 +6,5 @@
    `alembic upgrade head`
 
 2. If you made a change to the schema file and want alembic to autogenerate a mirgation file, use the following command:
-   `alembic upgrade head`
+   `alembic revision --autogenerate -m "your update message"`
+   w
