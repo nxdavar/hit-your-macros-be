@@ -60,8 +60,9 @@ def normalize_seed_data(file_name, table_name):
 
     df = df.astype(filtered_menu_item_type_mapping)
 
-    print("this is the dataframe info: ")
-    print(df.head())
+    # print out every row the df:
+    for index, row in df.iterrows():
+        print(row)
 
     # with next(get_db()) as session:
     #     df.to_sql(table_name, con=session.bind, if_exists="append", index=False)

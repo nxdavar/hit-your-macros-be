@@ -146,7 +146,7 @@ def extract_header_data():
 if __name__ == "__main__":
     load_dotenv()
     bucket_name = "nutrition-menus"
-    folder_base = "canes"
+    folder_base = "torchys"
     folder_name = folder_base + "/"
     presigned_urls_cache = {}
 
