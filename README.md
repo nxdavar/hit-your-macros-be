@@ -8,7 +8,9 @@ This is the backend repository for Hit Your Macros - an app intends to help you 
 
 Below we will outline the major backend workflows that this repo. contains:
 
-####
+#### Workflow As An Image:
+
+![Image description](assets/images/HitYourMacros_DataBottlenecks.png)
 
 ### Project Structure
 
