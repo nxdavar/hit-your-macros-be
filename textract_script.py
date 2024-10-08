@@ -154,18 +154,20 @@ if __name__ == "__main__":
         bucket_name=bucket_name, keyword="header", folder_prefix=folder_base
     )
 
+    # 1. asking GPT to extract the header from an image and convert it into a csv
     extract_header(curr_header_img_url=curr_header_url, curr_res_name=folder_base)
 
+    # 2. generate presigned urls for all the menu item sections in a given menu
     presigned_urls_dict = generate_presigned_urls(
         presigned_urls_cache, bucket_name, folder_name
     )
 
-    # find the header image in the presigned urls dict
-    curr_header_img_url = None
-    for file_key, menu_presigned_url in presigned_urls_dict.items():
-        if file_key.find("header") != -1:
-            curr_header_img_url = menu_presigned_url
-            break
+    # # find the header image in the presigned urls dict
+    # curr_header_img_url = None
+    # for file_key, menu_presigned_url in presigned_urls_dict.items():
+    #     if file_key.find("header") != -1:
+    #         curr_header_img_url = menu_presigned_url
+    #         break
 
     for file_key, menu_presigned_url in presigned_urls_dict.items():
         print(

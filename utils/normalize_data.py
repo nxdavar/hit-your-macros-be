@@ -160,6 +160,9 @@ def normalize_seed_for_folder():
         )
 
 
+# TODO: create normalize seed for folder function for a file and test on one file and repeat
+
+
 def main():
     normalize_seed_for_folder()
 

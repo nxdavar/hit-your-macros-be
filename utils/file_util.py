@@ -26,7 +26,7 @@ def custom_read_csv(file_name, error_file):
             if len(row) == expected_num_fields:
                 valid_rows.append(row)
             else:
-                # Log the invalid row
+                # Log the invalid rows
                 print(f"Line {line_num} has {len(row)} fields: {row}")
                 error_log.write(f"Line {line_num} has {len(row)} fields: {row}\n")
 
