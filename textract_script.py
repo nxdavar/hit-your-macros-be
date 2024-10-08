@@ -162,13 +162,6 @@ if __name__ == "__main__":
         presigned_urls_cache, bucket_name, folder_name
     )
 
-    # # find the header image in the presigned urls dict
-    # curr_header_img_url = None
-    # for file_key, menu_presigned_url in presigned_urls_dict.items():
-    #     if file_key.find("header") != -1:
-    #         curr_header_img_url = menu_presigned_url
-    #         break
-
     for file_key, menu_presigned_url in presigned_urls_dict.items():
         print(
             "this is the url we will be analyzing with textract: ", menu_presigned_url
