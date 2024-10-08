@@ -1,12 +1,16 @@
 # external imports:
 import importlib
 
+from utils.file_names import db_mapping_base
+
 
 # panda_express_menu_item_mapping
+# TODO: modify path names for res module and get function from module
 
 
 def get_restaurant_module(res_name: str):
-    module_name = f"data.mapping.{res_name}_header_to_db"
+    module_name = f"{db_mapping_base}.{res_name}_header_to_db"
+    print("this is module naeme: ", module_name)
     try:
         module = importlib.import_module(module_name)
         return module

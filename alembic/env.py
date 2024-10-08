@@ -3,6 +3,8 @@ from logging.config import fileConfig
 
 from sqlalchemy import create_engine
 from sqlalchemy import pool
+from alembic import context
+
 
 from alembic import context
 from dotenv import load_dotenv
@@ -14,12 +16,19 @@ from db.schema import *
 
 load_dotenv()
 
+SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD")
 
-database_url = os.getenv("DATABASE_URL")
+# direct url differs from the other database url, used for migrations per supabase docs
+direct_url = "postgresql://postgres.zuosbnvbwucthjnwxipe:{SUPABASE_DB_PASSWORD}@aws-0-us-east-1.pooler.supabase.com:5432/postgres"
+
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
+
+
+config.set_main_option("sqlalchemy.url", direct_url)
+
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
@@ -41,7 +50,7 @@ target_metadata = Base.metadata
 def run_migrations_offline():
     """Run migrations in 'offline' mode."""
     context.configure(
-        url=database_url,
+        url=direct_url,
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
@@ -53,7 +62,7 @@ def run_migrations_offline():
 
 def run_migrations_online():
     """Run migrations in 'online' mode."""
-    connectable = create_engine(database_url)
+    connectable = create_engine(direct_url)
 
     with connectable.connect() as connection:
         context.configure(

@@ -67,13 +67,13 @@ def normalize_seed_data(file_name, table_name):
 
     df = df.astype(filtered_menu_item_type_mapping)
 
-    with next(get_db()) as session:
-        # Generate UUID for menu item if it doesn't exist
-        if "menu_item_id" not in df.columns:
-            df["menu_item_id"] = [str(uuid.uuid4()) for _ in range(len(df))]
+    # with next(get_db()) as session:
+    #     # Generate UUID for menu item if it doesn't exist
+    #     if "menu_item_id" not in df.columns:
+    #         df["menu_item_id"] = [str(uuid.uuid4()) for _ in range(len(df))]
 
-        df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
-        session.commit()
+    #     df.to_sql(table_name, con=session.bind, if_exists="append", index=False)
+    #     session.commit()
 
 
 """
@@ -135,11 +135,11 @@ Gets the foreign key value for the restaurant_id column in the menu_item table.
 
 def get_foreign_key(res_name: str):
     session = next(get_db())
-    res_id = get_restaurant_id_one(session, res_name)
+    res_id = get_restaurant_id_one(res_name)
     if res_id:
         print("this is the restaurant id: ", res_id)
     else:
-        restaurant = add_new_restaurant(session, res_name)
+        restaurant = add_new_restaurant(res_name)
         if restaurant:
             res_id = restaurant.restaurant_id
         print("restaurant not found, created new one: ", restaurant)
