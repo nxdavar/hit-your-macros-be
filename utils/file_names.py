@@ -17,6 +17,8 @@ DF_READING_ANOMALIES = BASE_DIR / "df_reading_anomalies"
 
 CLEANED_TEXTRACT_RES_CSVS = BASE_DIR / "cleaned_textract_res_csvs"
 
+CLEANED_TEXTRACT_TESTING = BASE_DIR / "cleaned_textract_res_csvs_testing"
+
 
 # db mapping base paths:
 db_mapping_base = "db.mapping"

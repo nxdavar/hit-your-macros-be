@@ -12,7 +12,7 @@ import os
 
 
 # internal imports:
-from db.schema import *
+from db.create_tables import *
 
 load_dotenv()
 

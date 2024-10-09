@@ -39,6 +39,8 @@ def get_engine():
 
 
 # Function to return the engine (singleton pattern)
+
+
 def get_db():
     SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=get_engine())
     db = SessionLocal()

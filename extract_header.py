@@ -4,6 +4,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 import base64
 import httpx
+import os
 
 
 # internal imports:
@@ -13,7 +14,8 @@ from utils.prompt_helpers import populate_base64_images
 
 
 def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
-    model = ChatOpenAI(model="gpt-4o-mini")
+
+    model = ChatOpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
     bucket_name = "nutrition-menus"
     folder_base = "metadata"

@@ -1,12 +1,20 @@
 # external imports:
 import pandas as pd
 from sqlalchemy import create_engine
+from sqlalchemy.orm import Session, sessionmaker
+
 from dotenv import load_dotenv
 import uuid
+from urllib.parse import urlparse, parse_qs
+import os
 
 
 # internal imports:
-from utils.file_names import CLEANED_TEXTRACT_RES_CSVS, DF_READING_ANOMALIES
+from utils.file_names import (
+    CLEANED_TEXTRACT_RES_CSVS,
+    DF_READING_ANOMALIES,
+    CLEANED_TEXTRACT_TESTING,
+)
 from utils.file_util import get_filenames_in_folder, custom_read_csv
 from db.models.restaurant import Restaurant
 from db.table_type_mapping import menu_item_type_mapping
@@ -67,7 +75,26 @@ def normalize_seed_data(file_name, table_name):
 
     df = df.astype(filtered_menu_item_type_mapping)
 
-    # with next(get_db()) as session:
+    # Parse the DATABASE_URL
+    url = urlparse(os.getenv("DATABASE_URL"))
+    query = parse_qs(url.query)
+
+    # Construct a new connection string
+    connection_string = f"postgresql://{url.username}:{url.password}@{url.hostname}:{url.port}/{url.path[1:]}"
+
+    # Add SSL mode if not present
+    if "sslmode" not in query:
+        connection_string += "?sslmode=require"
+
+    # Create the engine with the correct parameters
+    engine = create_engine(
+        connection_string, pool_pre_ping=True, pool_size=10, max_overflow=20
+    )
+
+    # Create a sessionmaker
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+    # with SessionLocal() as session:
     #     # Generate UUID for menu item if it doesn't exist
     #     if "menu_item_id" not in df.columns:
     #         df["menu_item_id"] = [str(uuid.uuid4()) for _ in range(len(df))]
@@ -150,21 +177,20 @@ def get_foreign_key(res_name: str):
     return res_id
 
 
-def normalize_seed_for_folder():
-    data_file_names = get_filenames_in_folder(CLEANED_TEXTRACT_RES_CSVS)
+def normalize_seed_for_folder(folder_name: str):
+    data_file_names = get_filenames_in_folder(folder_name)
     for file_name in data_file_names:
         if file_name == "halal_guys.csv":
             continue
-        normalize_seed_data(
-            f"""{CLEANED_TEXTRACT_RES_CSVS }/{file_name}""", "menu_item"
-        )
+        normalize_seed_data(f"""{folder_name }/{file_name}""", "menu_item")
 
 
 # TODO: create normalize seed for folder function for a file and test on one file and repeat
 
 
 def main():
-    normalize_seed_for_folder()
+    folder_name = CLEANED_TEXTRACT_TESTING
+    normalize_seed_for_folder(folder_name)
 
 
 if __name__ == "__main__":

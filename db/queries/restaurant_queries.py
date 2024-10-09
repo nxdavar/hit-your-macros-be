@@ -29,20 +29,6 @@ engine = create_engine(
 # Create a sessionmaker
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Use declarative base instead of reflection
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
-
-
-# Define your Restaurant model (if not already defined elsewhere)
-class Restaurant(Base):
-    __tablename__ = "restaurant"
-    restaurant_id = Column(Integer, primary_key=True)
-    name = Column(String)
-
-
-# The rest of your functions remain largely the same, but use SessionLocal
 
 
 def get_restaurant_id_one(res_name: str):
