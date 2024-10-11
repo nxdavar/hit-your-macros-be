@@ -1,9 +1,5 @@
 # external imports:
-from sqlalchemy import (
-    Column,
-    String,
-    Float,
-)
+from sqlalchemy import Column, Float, String
 
 # internal imports:
 from db.models.base import Base

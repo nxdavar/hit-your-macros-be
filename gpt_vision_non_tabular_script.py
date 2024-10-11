@@ -1,16 +1,17 @@
 # external imports:
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage, SystemMessage
+import base64
 import csv
 import os
-import base64
+
 import httpx
 from dotenv import load_dotenv
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
 
+from utils.aws_util import generate_presigned_urls
 
 # internal imports:
 from utils.file_names import IMAGE_TO_RES_CSVS
-from utils.aws_util import generate_presigned_urls
 
 
 # saves files to csv
@@ -57,20 +58,23 @@ def main():
             content=[
                 {
                     "type": "text",
-                    "text": " You are going to be given a url to an image and macronutritional information fields. The image will contain "
-                    + " nutritional information for a restaurant's menu item. Your goal is to extract the nutritional information fields "
-                    + "from the image and output that menu item's nutritional information as a csv row with the menu item name as the first column."
-                    + "The image may also contain information about the menu item's size: if a size is present, include it in the menu item name."
-                    + "If you cannot extract nutritional information for a specific field, leave it blank."
-                    + "Also, if the menu item name contains a comma, please replace it with a hypen with a whitespace before the hyphen and after"
-                    + " the hyphen. Likewise, strip any of the following characters from the menu item name: ['†', '*, '®', '™']. These are the "
-                    + "nutrition information fields you should extract: calories, total fat, saturated fat, trans fat, cholestrol, sodium,"
-                    + "total carbohydratesm dietary fiber, sugars, protein, calcium, iron, potassium",
+                    "text": " You are going to be given a url to an image and macronutritional information fields. "
+                    + "The image will contain nutritional information for a restaurant's menu item. Your goal is to extract "
+                    + "the nutritional information fields from the image and output that menu item's nutritional information "
+                    + "as a csv row with the menu item name as the first column. The image may also contain information "
+                    + "about the menu item's size: if a size is present, include it in the menu item name. If you cannot "
+                    + "extract nutritional information for a specific field, leave it blank. Also, if the menu item name "
+                    + "contains a comma, please replace it with a hypen with a whitespace before the hyphen and after the "
+                    + "hyphen. Likewise, strip any of the following characters from the menu item name: ['†', '*, '®', '™']. "
+                    + "These are the nutrition information fields you should extract: calories, total fat, saturated fat, "
+                    + "trans fat, cholestrol, sodium, total carbohydrates, dietary fiber, sugars, protein, calcium, "
+                    + "iron, potassium",
                 },
                 {
                     "type": "text",
                     "text": "An example of could be the following:"
-                    + "<user>: data:image/jpeg;base64,https://www.goprep.com/wp-content/uploads/2019/06/screen-shot-2019-06-19-at-6.09.23-pm.png"
+                    + "<user>: data:image/jpeg;base64,"
+                    + "https://www.goprep.com/wp-content/uploads/2019/06/screen-shot-2019-06-19-at-6.09.23-pm.png"
                     + "<system>: Cajun Chicken with Asapragus and Brown Rice,460,6,1.5,0,120,3530,61,7,3,0,42,1,0,960",
                 },
             ],

@@ -1,11 +1,9 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import (
-    NoSuchElementException,
-    ElementClickInterceptedException,
-)
-import time
 import os
+import time
+
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 
 # Setup the WebDriver (Assuming using Chrome)
 driver = webdriver.Chrome()
@@ -44,7 +42,7 @@ try:
         # Find all div elements with the class 'css-175oi2r'
         divs = driver.find_elements(By.CSS_SELECTOR, "div.css-175oi2r")
 
-        print('current divs: ', divs)
+        print("current divs: ", divs)
 
         for div in divs:
             # Find the h4 tag within the div to use its text as the key

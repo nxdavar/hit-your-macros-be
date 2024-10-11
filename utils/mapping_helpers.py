@@ -3,7 +3,6 @@ import importlib
 
 from utils.file_names import db_mapping_base
 
-
 # panda_express_menu_item_mapping
 # TODO: modify path names for res module and get function from module
 

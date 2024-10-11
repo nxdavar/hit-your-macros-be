@@ -191,4 +191,3 @@ ALTER TABLE ONLY public.menu_item
 --
 -- PostgreSQL database dump complete
 --
-

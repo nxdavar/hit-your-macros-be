@@ -1,6 +1,4 @@
 # maps the column types for tables in the hit your macros database
-from sqlalchemy import String, Float, Boolean, DECIMAL
-
 menu_item_type_mapping = {
     "name": "object",
     "description": "object",

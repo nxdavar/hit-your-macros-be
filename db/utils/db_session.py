@@ -1,9 +1,8 @@
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
-
-
 import os
+
 from dotenv import load_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 load_dotenv()
 
@@ -23,10 +22,10 @@ SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD")
 SUPABASE_DB_HOST = os.getenv("SUPABASE_DB_HOST")
 SUPABASE_DB_PORT = os.getenv("SUPABASE_DB_PORT")
 
-
-# we
-DATABASE_URL = "postgresql://postgres.zuosbnvbwucthjnwxipe:{SUPABASE_DB_PASSWORD}@aws-0-us-east-1.pooler.supabase.com:5432/postgres?pgbouncer=true"
-
+DATABASE_URL = (
+    "postgresql://postgres.zuosbnvbwucthjnwxipe:{SUPABASE_DB_PASSWORD}"
+    "@aws-0-us-east-1.pooler.supabase.com:5432/postgres?pgbouncer=true"
+)
 
 _engine = None
 

@@ -25,13 +25,12 @@ chromadb==0.4.24
 click==8.1.7
 cohere==5.9.0
 coloredlogs==15.0.1
-crewai==0.51.1
-crewai-tools==0.8.3
 cryptography==43.0.0
 dataclasses-json==0.6.7
 decorator==5.1.1
 Deprecated==1.2.14
 deprecation==2.1.0
+distlib==0.3.9
 distro==1.9.0
 docker==7.1.0
 docstring_parser==0.16
@@ -138,6 +137,8 @@ parameterized==0.9.0
 pathlib==1.0.1
 pdfminer.six==20240706
 pillow==10.4.0
+pipenv==2024.1.0
+platformdirs==4.3.6
 pluggy==1.5.0
 portalocker==2.10.1
 posthog==3.6.3
@@ -181,6 +182,7 @@ s3transfer==0.10.2
 schema==0.7.7
 selenium==4.24.0
 semver==3.0.2
+setuptools==75.1.0
 shapely==2.0.6
 shellingham==1.5.4
 six==1.16.0
@@ -208,6 +210,7 @@ uritemplate==4.1.1
 urllib3==2.2.2
 uvicorn==0.30.6
 uvloop==0.20.0
+virtualenv==20.26.6
 watchfiles==0.24.0
 websocket-client==1.8.0
 websockets==13.0.1

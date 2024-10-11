@@ -1,20 +1,15 @@
-# external imports:
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
-from langchain_openai import ChatOpenAI
+import base64
 import csv
 import os
-import boto3
-import base64
+
 import httpx
 from dotenv import load_dotenv
-import time
+from langchain_core.messages import HumanMessage
+from langchain_openai import ChatOpenAI
 
-
-# internal imports:
 from utils.aws_util import generate_presigned_urls
-from utils.prompts import tabular_data_extraction_prompt
 from utils.prompt_helpers import populate_base64_images
+from utils.prompts import tabular_data_extraction_prompt
 
 
 # saves files to csv
@@ -37,7 +32,7 @@ def save_to_csv(response, file_path):
 def main():
     load_dotenv()
 
-    s3 = boto3.client("s3")
+    # s3 = boto3.client("s3")
     bucket_name = "nutrition-menus"
     folder_base = "tatte"
     folder_name = folder_base + "/"

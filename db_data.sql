@@ -1409,4 +1409,3 @@ COPY public.zipcode_geolocation (zipcode, latitude, longitude) FROM stdin;
 --
 -- PostgreSQL database dump complete
 --
-

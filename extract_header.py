@@ -1,16 +1,12 @@
-# external imports:
-
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
 import base64
-import httpx
 import os
 
+import httpx
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
 
-# internal imports:
 from utils.aws_util import generate_presigned_url_for_file_with_keyword
 from utils.file_names import CLEANED_TEXTRACT_RES_CSVS
-from utils.prompt_helpers import populate_base64_images
 
 
 def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
@@ -18,9 +14,9 @@ def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
     model = ChatOpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
     bucket_name = "nutrition-menus"
-    folder_base = "metadata"
-    folder_name = folder_base + "/"
-    keyword = "header"
+    # folder_base = "metadata"
+    # folder_name = folder_base + "/"
+    # keyword = "header"
 
     sample_header_img_url = generate_presigned_url_for_file_with_keyword(
         bucket_name=bucket_name, keyword="header", folder_prefix="metadata/"
@@ -38,8 +34,8 @@ def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
             {
                 "type": "text",
                 "text": f"""An example of could be the following:
-                 "<user>: data:image/jpeg;base64,{sample_header_img_url}"
-                 "<system>: Name, Cal., Cal. Fat, Total Fat, Sat. Fat, Trans. Fat, Chol, Sodium, Carb, Fiber, Sugar, Protein""",
+                "<user>: data:image/jpeg;base64,{sample_header_img_url}"
+                "<system>: Name, Cal., Cal. Fat, Total Fat, Sat. Fat, Trans. Fat, Chol, Sodium, Carb, Fiber, Sugar, Protein""",
             },
         ],
     )
@@ -67,4 +63,4 @@ def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
 
     print(res.content)
 
-    return -1
+    return "-1"
