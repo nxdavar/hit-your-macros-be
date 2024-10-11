@@ -53,6 +53,8 @@ brew install direnv
 
 Note: If you have `direnv` installed and would like to have virtualenv installed to the project directory, run `direnv allow .` from the root of the project to have the PIPENV_VENV_IN_PROJECT environment variable set. Run `pipenv --venv` to validate the path to the virtualenv points to the project directory and not somewhere in `$XDG_DATAHOME/virtualenvs` (i.e. `~/.local/share/virtualenvs`).
 
+To install a new package, run `pipenv install <package_name> --dev`
+
 See more about `pipenv` [here](https://pipenv.pypa.io/en/latest/).
 
 ### Setting Up Conventional Commits

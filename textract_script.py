@@ -1,22 +1,19 @@
-# external imports:
+from typing import Any, Dict
+
 import boto3
-from io import BytesIO
-from PIL import Image
+import requests  # type: ignore
 from dotenv import load_dotenv
-import requests
-from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.messages import SystemMessage
 from langchain_openai import ChatOpenAI
-
-
-# internal imports:
-from utils.aws_util import (
-    generate_presigned_urls,
-    generate_presigned_url_for_file_with_keyword,
-)
 
 from clean_textract import clean_textract_row
 from extract_header import extract_header
 
+# internal imports:
+from utils.aws_util import (
+    generate_presigned_url_for_file_with_keyword,
+    generate_presigned_urls,
+)
 
 # Initialize the Amazon Textract client
 textract_client = boto3.client("textract", region_name="us-east-1")
@@ -126,19 +123,20 @@ def extract_header_data():
         content=[
             {
                 "type": "text",
-                "text": " You are going to be given an image containing details about the header of a nutritional information table in base64 format. "
-                + "Extract the header information and output it in a csv format.",
+                "text": " You are going to be given an image containing details about the header of a nutritional information "
+                + "table in base64 format. Extract the header information and output it in a csv format.",
             },
             {
                 "type": "text",
                 "text": "An example of could be the following:"
-                + "<user>: data:image/jpeg;base64,https://www.goprep.com/wp-content/uploads/2019/06/screen-shot-2019-06-19-at-6.09.23-pm.png"
+                + "<user>: data:image/jpeg;base64,"
+                + "https://www.goprep.com/wp-content/uploads/2019/06/screen-shot-2019-06-19-at-6.09.23-pm.png"
                 + "<system>: Cajun Chicken with Asapragus and Brown Rice,460,6,1.5,0,120,3530,61,7,3,0,42,1,0,960",
             },
         ],
     )
 
-    res = model.invoke([system_message])
+    model.invoke([system_message])
 
     return -1
 
@@ -148,7 +146,7 @@ if __name__ == "__main__":
     bucket_name = "nutrition-menus"
     folder_base = "panda_express"
     folder_name = folder_base + "/"
-    presigned_urls_cache = {}
+    presigned_urls_cache: Dict[str, Any] = {}
 
     curr_header_url = generate_presigned_url_for_file_with_keyword(
         bucket_name=bucket_name, keyword="header", folder_prefix=folder_base

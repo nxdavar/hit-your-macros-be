@@ -1,25 +1,21 @@
-# external imports:
+import os
 from logging.config import fileConfig
 
-from sqlalchemy import create_engine
-from sqlalchemy import pool
-from alembic import context
-
-
-from alembic import context
 from dotenv import load_dotenv
-import os
+from sqlalchemy import create_engine
 
-
-# internal imports:
-from db.create_tables import *
+from alembic import context  # type: ignore
+from db.create_tables import Base
 
 load_dotenv()
 
 SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD")
 
 # direct url differs from the other database url, used for migrations per supabase docs
-direct_url = "postgresql://postgres.zuosbnvbwucthjnwxipe:{SUPABASE_DB_PASSWORD}@aws-0-us-east-1.pooler.supabase.com:5432/postgres"
+direct_url = (
+    "postgresql://postgres.zuosbnvbwucthjnwxipe:{SUPABASE_DB_PASSWORD}@"
+    "aws-0-us-east-1.pooler.supabase.com:5432/postgres"
+)
 
 
 # this is the Alembic Config object, which provides
@@ -83,7 +79,7 @@ def update_menu_mapping():
     :param column_renames: Dictionary mapping old column names to new column names.
     """
     from sqlalchemy import MetaData
-    import json
+
     from alembic import op
 
     # Reflect the updated schema
@@ -91,7 +87,7 @@ def update_menu_mapping():
     table_name = "menu_item"
     metadata = MetaData()
     metadata.reflect(bind=bind, only=[table_name])
-    table = metadata.tables[table_name]
+    # table = metadata.tables[table_name]
 
 
 if context.is_offline_mode():

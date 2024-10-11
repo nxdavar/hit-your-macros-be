@@ -1,7 +1,8 @@
 # external imports:
-import os
-import pandas as pd
 import csv
+import os
+
+import pandas as pd
 
 
 def custom_read_csv(file_name, error_file):

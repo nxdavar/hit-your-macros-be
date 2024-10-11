@@ -1,15 +1,8 @@
 # external imports:
-from sqlalchemy import (
-    Column,
-    String,
-    Float,
-    Boolean,
-    Integer,
-    Time,
-    JSON,
-)
-from sqlalchemy.dialects.postgresql import UUID
 import uuid
+
+from sqlalchemy import JSON, Boolean, Column, Float, String, Time
+from sqlalchemy.dialects.postgresql import UUID
 
 # internal imports:
 from db.models.base import Base

@@ -1,6 +1,5 @@
-# internal imports:
 from db.models.base import Base
-from db.utils.db_session import get_engine, get_db_port
+from db.utils.db_session import get_db_port, get_engine
 
 
 # Create tables in the database

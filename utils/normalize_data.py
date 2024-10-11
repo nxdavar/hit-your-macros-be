@@ -1,28 +1,23 @@
 # external imports:
-import pandas as pd
-from sqlalchemy import create_engine
-from sqlalchemy.orm import Session, sessionmaker
-
-from dotenv import load_dotenv
-import uuid
-from urllib.parse import urlparse, parse_qs
 import os
+from urllib.parse import parse_qs, urlparse
 
+import pandas as pd
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+from db.queries.restaurant_queries import add_new_restaurant, get_restaurant_id_one
+from db.table_type_mapping import menu_item_type_mapping
+from db.utils.db_session import get_db, get_engine
 
 # internal imports:
-from utils.file_names import (
-    CLEANED_TEXTRACT_RES_CSVS,
-    DF_READING_ANOMALIES,
+from utils.file_names import (  # CLEANED_TEXTRACT_RES_CSVS,
     CLEANED_TEXTRACT_TESTING,
+    DF_READING_ANOMALIES,
 )
-from utils.file_util import get_filenames_in_folder, custom_read_csv
-from db.models.restaurant import Restaurant
-from db.table_type_mapping import menu_item_type_mapping
-from utils.mapping_helpers import get_restaurant_module, get_function_from_module
-from db.utils.db_session import get_db, get_engine
-from db.models.restaurant import Restaurant
-from db.queries.restaurant_queries import get_restaurant_id_one, add_new_restaurant
-
+from utils.file_util import custom_read_csv, get_filenames_in_folder
+from utils.mapping_helpers import get_function_from_module, get_restaurant_module
 
 """
 This function normalizes seed data from a CSV file to match the database schema.
@@ -92,7 +87,7 @@ def normalize_seed_data(file_name, table_name):
     )
 
     # Create a sessionmaker
-    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+    sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
     # with SessionLocal() as session:
     #     # Generate UUID for menu item if it doesn't exist
@@ -161,7 +156,7 @@ Gets the foreign key value for the restaurant_id column in the menu_item table.
 
 
 def get_foreign_key(res_name: str):
-    session = next(get_db())
+    next(get_db())
     res_id = get_restaurant_id_one(res_name)
     if res_id:
         print("this is the restaurant id: ", res_id)
@@ -182,7 +177,7 @@ def normalize_seed_for_folder(folder_name: str):
     for file_name in data_file_names:
         if file_name == "halal_guys.csv":
             continue
-        normalize_seed_data(f"""{folder_name }/{file_name}""", "menu_item")
+        normalize_seed_data(f"""{folder_name}/{file_name}""", "menu_item")
 
 
 # TODO: create normalize seed for folder function for a file and test on one file and repeat

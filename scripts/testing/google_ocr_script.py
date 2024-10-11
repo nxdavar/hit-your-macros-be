@@ -29,4 +29,4 @@ def detect_text(path):
         )
 
 
-detect_text('restaurant_assets/maccas/maccas_test.png')
+detect_text("restaurant_assets/maccas/maccas_test.png")
