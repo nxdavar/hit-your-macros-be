@@ -21,8 +21,6 @@ if url.path:
     connection_string += url.path[1:]
 
 # Add SSL mode if not present
-# if "sslmode" not in query:
-#     connection_string += "?sslmode=require"
 if "sslmode" not in query:
     query["sslmode"] = ["require"]
 

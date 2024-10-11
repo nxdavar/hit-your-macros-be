@@ -14,9 +14,6 @@ def extract_header(curr_header_img_url: str, curr_res_name: str) -> str:
     model = ChatOpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
     bucket_name = "nutrition-menus"
-    # folder_base = "metadata"
-    # folder_name = folder_base + "/"
-    # keyword = "header"
 
     sample_header_img_url = generate_presigned_url_for_file_with_keyword(
         bucket_name=bucket_name, keyword="header", folder_prefix="metadata/"

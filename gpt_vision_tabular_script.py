@@ -32,7 +32,6 @@ def save_to_csv(response, file_path):
 def main():
     load_dotenv()
 
-    # s3 = boto3.client("s3")
     bucket_name = "nutrition-menus"
     folder_base = "tatte"
     folder_name = folder_base + "/"

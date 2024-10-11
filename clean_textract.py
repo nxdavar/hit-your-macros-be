@@ -10,11 +10,6 @@ from utils.file_names import CLEANED_TEXTRACT_RES_CSVS
 def clean_textract_row(textract_row: str, curr_res_name: str) -> str:
     model = ChatOpenAI(model="gpt-4o-mini")
 
-    # bucket_name = "nutrition-menus"
-    # folder_base = "metadata"
-    # folder_name = folder_base + "/"
-    # keyword = "header"
-
     system_message = SystemMessage(
         content=[
             {

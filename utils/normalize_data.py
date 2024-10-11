@@ -1,4 +1,3 @@
-# external imports:
 import os
 from urllib.parse import parse_qs, urlparse
 
@@ -10,12 +9,7 @@ from sqlalchemy.orm import sessionmaker
 from db.queries.restaurant_queries import add_new_restaurant, get_restaurant_id_one
 from db.table_type_mapping import menu_item_type_mapping
 from db.utils.db_session import get_db, get_engine
-
-# internal imports:
-from utils.file_names import (  # CLEANED_TEXTRACT_RES_CSVS,
-    CLEANED_TEXTRACT_TESTING,
-    DF_READING_ANOMALIES,
-)
+from utils.file_names import CLEANED_TEXTRACT_TESTING, DF_READING_ANOMALIES
 from utils.file_util import custom_read_csv, get_filenames_in_folder
 from utils.mapping_helpers import get_function_from_module, get_restaurant_module
 
