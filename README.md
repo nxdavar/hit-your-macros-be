@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the backend repository for Hit Your Macros - an app intends to help you find macro-nutritionally frpipiendly items at restaurants in your vicinity.
+This is the backend repository for Hit Your Macros - an app intends to help you find macro-nutritionally friendly items at restaurants in your vicinity.
 
 ## Data Extraction Workflows
 
